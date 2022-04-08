@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.root{
+  width: 100vw;
+  height: 100vh;
+  
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+header{
+  width: 100vw;
+  height: 35vh;
+  background-color: aquamarine;
+}
+
+main{
+  width: 90vw;
+  height: 30vh;
+  background-color: salmon;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main div{
+  width: 70vw;
+  height: 20vh;
+  background-color: rgb(153, 103, 97);
+}
+
+footer{
+  width: 90vw;
+  height: 35vh;
+  background-color: #ccc;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer section{
+  width: 85vw;
+  height: 30vh;
+  background-color: lightblue;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer section div{
+  width: 15vw;
+  height: 20vh;
+  background-color: rgb(100, 144, 158);
+}
+
+.side{
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.side>div{
+  width: 10vw;
+  height: 65vh;
+  background-color: darkgray;
+
+  position: absolute;
+  top: 35vh;
+}
+</style>
+</head>
+<body>
+  <div class="root">
+    <header></header>
+    <main>
+      <div></div>
+    </main>
+    <footer>
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+    </footer>
+    <div class="side">
+      <div></div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="basic.css">
+  <title>Document</title>
+  <style>
+
+
+  .header{
+     width: 100vw;
+     height: 17vw;
+     background-color: var(--color-4);
+  }
+
+  .header>h1{
+    color: var(--color-1);
+  }
+
+  #root>div:nth-child(2){
+    width: 80vw;
+    height: 4vh;
+    color: var(--color-1);
+    margin: 5vw;
+  }
+
+  .main{
+    width: 100vw;
+    height: 30vh;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .main>div:nth-child(1){
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 10px;
+  }
+
+  .main>div:nth-child(1)>div:nth-child(1){
+    width: 65vw;
+    height: 28vh;
+    background-color: var(--color-2);
+    border-radius: 20px;
+  }
+  .main>div:nth-child(1)>div:nth-child(1)>div:nth-child(1){
+    width: 65vw;
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+
+    margin-left: 10px;
+    
+    color: var(--color-1);
+  }
+  .main>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>p{
+    font-size: 1.5rem;
+  }
+
+  .main>div:nth-child(1)>div:nth-child(2){
+    width: 65vw;
+    height: 28vh;
+    background-color: var(--color-2);
+    margin-left: 10px;
+    border-radius: 20px;
+  }
+  .more{
+    width: 11vw;
+    height: 2.5vh;
+
+    border-radius: 30px;
+    border: 1px solid var(--color-1);
+  }
+
+  .more>p{
+    font-size: 1rem;
+  }
+
+  .main>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3){
+    width: 63vw;
+    height: 5vh;
+  }
+
+  /* 1번상자 */
+
+  .second>div:nth-child(1){
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 10px;
+  }
+
+  .second>div:nth-child(1)>div:nth-child(1){
+    width: 65vw;
+    height: 28vh;
+    background-color: var(--color-2);
+    border-radius: 20px;
+  }
+  .second>div:nth-child(1)>div:nth-child(1)>div:nth-child(1){
+    width: 65vw;
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+
+    margin-left: 10px;
+    
+    color: var(--color-1);
+  }
+  .second>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>p{
+    font-size: 1.5rem;
+  }
+
+  .second>div:nth-child(1)>div:nth-child(2){
+    width: 65vw;
+    height: 28vh;
+    background-color: var(--color-2);
+    margin-left: 10px;
+    border-radius: 20px;
+  }
+  .more2{
+    width: 11vw;
+    height: 2.5vh;
+
+    border-radius: 30px;
+    border: 1px solid var(--color-1);
+  }
+
+  .more2>p{
+    font-size: 1rem;
+  }
+
+  .second>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3){
+    width: 63vw;
+    height: 5vh;
+  }
+    /* trending Today 끝 */
+
+  .released{
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    align-items: flex-end;
+    color: var(--color-1);
+  }
+  .released>h3{
+
+    margin-left: 5vw;
+    font-size: 1.5rem;
+  }
+
+  .main2 {
+    width: 100vw;
+    height: 34vh;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+
+  .main2>div:nth-child(1){
+    width: 40vw;
+    height: 32vh;
+    background-color: var(--color-2);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .main2>div:nth-child(2){
+    width: 40vw;
+    height: 32vh;
+    background-color: var(--color-2);
+    border-radius: 10px;
+  }
+
+  .bottom{
+    width: 100vw;
+    height: 10vw;
+    background-color: var(--color-4);
+
+    margin-top: 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .icon{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="header flex-center">
+      <h1>NEWS</h1>
+    </div>
+    <div>
+      <h2>Trending Today</h2>
+    </div>
+
+    <div class="main">
+      <div>
+        <div>
+          <div>
+            <p>Movie Tilte</p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit...</span>
+            <div class="flex-center">
+              <div class="more flex-center">
+                <p>MORE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+            <!-- 1번상자 -->
+        <div class="second">
+          <div>
+            <div>
+              <div>
+                <p>Movie Tilte</p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit...</span>
+                <div class="flex-center">
+                  <div class="more2 flex-center">
+                    <p>MORE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="released">
+    <h3>
+      Recently News
+    </h3>
+  </div>
+
+  <div class="main2">
+    <div>
+      <h4 style="color:var(--color-1); font-size: 1.5rem; margin-left: 20px;">NEWS TITLE</h4>
+      <p style="color:var(--color-1); margin-left: 20px; margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="flex-center" style="width: 30vw; height: 7vw; border: 1px solid var(--color-1); border-radius: 15px; color: var(--color-1); margin-left: 20px; margin-bottom: 10px">
+        <p>Read More</p>
+      </div>
+    </div>
+    <!-- main2 첫번재 박스 -->
+
+    <div class="second2 flex-bottom">
+      <div>
+        <h4 style="color:var(--color-1); font-size: 1.5rem; margin-left: 20px;">NEWS TITLE</h4>
+        <p style="color:var(--color-1); margin-left: 20px; margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="flex-center" style="width: 30vw; height: 7vw; border: 1px solid var(--color-1); border-radius: 15px; color: var(--color-1); margin-left: 20px; margin-bottom: 10px">
+          <p>Read More</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- main2 끝 -->
+
+  <div class="bottom">
+    <div class="icon">
+      <div style="width: 5vw; height: 5vw; background-color: var(--color-2); border-radius: 5px;"></div>
+      <div style="width: 5vw; height: 5vw; background-color: var(--color-2); border-radius: 5px;"></div>
+      <div style="width: 5vw; height: 5vw; background-color: var(--color-2); border-radius: 5px;"></div>
+    </div>
+  </div>
+
+
+</div>
+</body>
+</html>

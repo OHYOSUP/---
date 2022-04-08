@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice2</title>
+  <style>
+    *{margin: 0; padding: 0;}
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+}
+
+
+.container> :nth-child(1) {
+  height: 10vh;
+  background-color: darksalmon;
+}
+.container> :nth-child(1) ul{
+  list-style-type: none;
+  width: 90vw;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.container> :nth-child(1) ul li{
+  
+  margin-right: 1vw;
+}
+
+
+.container> :nth-child(2){
+  height: 70vh;
+  background-color: darkgreen;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.container> :nth-child(2) :nth-child(1){
+  border: 1px solid red;
+ 
+}
+
+.container> :nth-child(2) :nth-child(2){
+  border:1px solid blue;
+  height: 3vh;
+  width: 20vw;
+
+}
+
+.container> :nth-child(2) :nth-child(3){
+  border: 1px solid green;
+  height: 3vh;
+  width: 30vw;
+}
+
+
+.container> :nth-child(3){
+  height: 20vh;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container> :nth-child(3) :nth-child(1){
+ width: 80vw;
+ text-align: center;
+}
+
+.container> :nth-child(3) p span{
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <ul>
+        <li>menu-1</li>
+        <li>menu-2</li>
+        <li>menu-3</li>
+        <li>menu-4</li>
+      </ul>
+    </div>
+
+    <div>
+      <h1>logo</h1>
+      <div>search-field</div>
+      <div>button</div>
+    </div>
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam asperiores dolor maiores iste! Doloremque fuga cumque beatae, possimus provident voluptate, esse quas dolor hic quae <span>repellendus</span> repudiandae deleniti, aperiam facere.
+      </p>
+    </div>
+
+
+
+
+  </div>
+</body>
+</html>

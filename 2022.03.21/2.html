@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+*{margin: 0; padding: 0;}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.top{
+  width: 95vw;
+  height: 5vh;
+  margin: 2.5vw;
+  background-color: lightblue;
+}
+
+.mid{
+  width: 100vw;
+  height: 60vh;
+  /* border: 1px solid red; */
+}
+.mid> :nth-child(1){
+width: 40vw;
+height: 60vh;
+background-color: salmon;
+
+position: absolute;
+left: 2.5vw;
+}
+.mid> :nth-child(2){
+  position: relative;
+}
+
+.mid> :nth-child(2) :nth-child(1){
+  width: 20vw;
+  height: 40vh;
+  background-color: salmon;
+
+  position: absolute;
+  left: 50vw;
+}
+.mid> :nth-child(2) :nth-child(2){
+  width: 20vw;
+  height: 40vh;
+  background-color: salmon;
+
+  position: absolute;
+  left: 75vw;
+}
+
+.mid> :nth-child(3) {
+  width: 45vw;
+
+  position: relative;
+  left: 50vw;
+  top: 45vh;
+}
+
+.bottom {
+  width: 95vw;
+  height: 25vh;
+  background-color: salmon;
+
+  position: relative;
+  left: 2.5vw;
+  top: 2.5vh;
+}
+
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="top"></div>  
+  
+  <div class="mid">
+    <div></div>
+    <div>
+      <div></div>
+      <div></div>
+    </div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio et labore, asperiores officiis dolorum consequuntur illum recusandae, voluptatem neque ratione earum laborum optio sunt aliquid inventore animi? Amet, vitae labore porro inventore officia, ipsum reiciendis ipsa aperiam exercitationem earum delectus quas quam laudantium sint? Deserunt fugiat molestiae voluptas quae quos.</div>
+
+  </div>
+
+  <div class="bottom"></div>
+</div>
+
+
+
+</body>
+</html>

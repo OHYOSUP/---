@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .root{
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(235, 235, 235);
+    }
+    .container{
+      width: 100vw;
+      height: 80vh;
+      background-color: rgb(146, 146, 146);
+    }
+    .container header{
+      width: 100vw;
+      height: 10vh;
+      border: 1px solid red;
+
+      display: flex;
+    }
+
+    .container header>:nth-child(1){
+      width: 15vw;
+      height: 10vh;
+      border: 1px solid red;
+    }
+
+    .container header>:nth-child(2){
+      width: 100vw;
+      height: 10vh;
+      border: 1px solid red;
+
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    .container header> :nth-child(2) section{
+      width: 15vw;
+      height: 10vh;
+      border: 1px solid red;
+    }
+
+    #center{
+      width: 100vw;
+      height: 70vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #center h1 {
+      width: 30vw;
+      height: 9vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #center>section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-top: 10px;
+    }
+
+    #center > div:nth-child(4) {
+      width: 50vw;
+      height: 10vh;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+<div class="root">
+  <div class="container">
+    <header>
+      <div></div>
+      <div>
+        <section></section>
+        <section></section>
+      </div>
+    </header>
+            <!-- TOP -->
+
+    <div class="main">
+      <div id="center">
+        <div>
+          <h1>영화와 시리즈를 무제한으로</h1>
+        </div>
+        <div>
+          <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing el<p>
+          </section>
+        </div>
+        <div>
+          <section>Lorem ipsum dolor, sit amet consectetur adipisicing el sit amet consectetur</section>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* style */
+
+
+.root{
+  width:100vw;
+  height: 100vh;
+  background-color: rgb(39, 39, 39);
+}
+
+.root nav{
+  width: 100vw;
+  height: 10vh;
+  
+}
+.root nav ul{
+
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.root nav ul li{
+  width: 4vw;
+  height: 0.5vh;
+  background-color: rgb(226, 226, 226);
+}
+
+.root nav ul li:nth-child(5){
+  width: 4vw;
+  height: 4vw;
+}
+
+.screen{
+  width: 100vw;
+  height: 30vh;
+  
+}
+
+.screen>div{
+  width: 70vw;
+  height: 25vh;
+  background-color: #c4c4c4;
+}
+
+.main{
+  width: 100vw;
+  height: 30vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main>div{
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+}
+
+.main>div:nth-child(3){
+  width: 25vw;
+  height: 20vh;
+  background-color: #c4c4c4;
+  border-radius: 5px;
+}
+
+.main>div:nth-child(6){
+  width: 100vw;
+  height: 0.2vh;
+  background-color: #c4c4c4;
+  border-radius: 0%;
+  position: absolute;
+}
+
+.title{
+  width: 100vw;
+  height: 10vh;
+  color: rgb(238, 238, 238);
+  flex-direction: column;
+  
+}
+
+.title>div{
+  width: 50vw;
+  height: 0.2vh;
+  background-color: #c4c4c4;
+}
+
+.synop{
+  width: 90vw;
+  height: 5vh;
+  margin-left: 2vw;
+
+  color: #c4c4c4;
+}
+
+section{
+  width: 90vw;
+  height: 10vh;
+
+ display: flex;
+ justify-content: center;
+ text-align: justify;
+
+ color: #9b9b9b;
+ margin-left: 3vw;
+}
+
+  </style>
+</head>
+<body>
+  <div class="root">
+    <nav>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+
+    <div class="screen flex-center">
+      <div></div>
+    </div>
+
+    <div class="main">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="title flex-center ">
+      <h1>
+        IPSUM LOREM
+      </h1>
+      <div></div>
+    </div>
+    <!-- ipsup lorem title -->
+
+    <div class="synop">
+      <h2>synopsis</h2>
+    </div>
+
+    <section>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem neque impedit fugiat odit vero eius dolores corporis eaque at dicta atque aspernatur, eveniet earum, ullam ut perferendis quos fuga.</p>
+    </section>
+
+  </div>
+</body>
+</html>

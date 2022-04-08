@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+.root{
+  width: 100vw;
+  height: 200vh;
+  background-color: salmon;
+}
+
+.root div{
+  width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.root> :nth-child(1) {
+ 
+  width: 100vw;
+  height: 10vh;
+
+  position: fixed;
+  /* left: 500px;
+  top: 800px; */
+}
+
+.root :nth-child(1) ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 14px;
+}
+
+.root :nth-child(1) ul li{
+margin: 20px;
+}
+
+ul :hover{
+  color: rgb(204, 192, 192);
+}
+
+
+.root >:nth-child(2){
+  position: relative;
+  top: 150px;
+  left: 500px;
+}
+
+.root >:nth-child(3){
+  position: relative;
+  top: 200px;
+  left: 500px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="root">
+    <div>
+      <ul>
+        <li>name-1</li>
+        <li>name-2</li>
+        <li>name-3</li>
+        <li>name-4</li>
+        <li>name-5</li>
+        <li>name-6</li>
+      </ul>
+    </div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>

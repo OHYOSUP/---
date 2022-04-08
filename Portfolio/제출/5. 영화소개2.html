@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<link rel="stylesheet" href="basic.css">
+  <style>
+:root{
+--bgc-1: #c4c4c4;
+--bgc-2: rgb(116, 116, 116);
+--bgc-3: rgb(59, 59, 59);
+--bgc-4: #ebebeb;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  /* style */
+
+.footage{
+  width: 100vw;
+  height: 60vh;
+  background-color: var(--bgc-3);
+}
+
+.footage>div{
+  width: 99vw;
+  height: 59vh;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.footage>div:nth-child(1)>div:nth-child(1) {
+  width: 25px;
+  height: 25px;
+  background-image: url(Group\ 13.png);
+  background-size: cover;
+}
+
+.footage>div:nth-child(1)>div:nth-child(2) {
+  width: 35px;
+  height: 40px;
+  background-image: url(Group\ 14.png);
+  background-size: cover;
+}
+
+.main{
+  width: 100vw;
+  height: 40vh;
+  flex-direction: column;
+
+  background-color: var(--bgc-4);
+}
+
+.icons{
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: center; */
+}
+
+.icons>div{
+  width: 25vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icons>div>div{
+  width: 30px;
+  height: 30px;
+  background-color: var(--bgc-2);
+}
+
+/* icons */
+
+.title{
+  width: 40vw;
+  height: 5vh;
+  
+}
+
+.title>div{
+  width: 25vw;
+  height: 5vh;
+  background-color: var(--bgc-1);
+  
+}
+
+.title>div>h1{
+  width: 25vw;
+  height: 5vh;
+  font-size: 0.9rem;
+  letter-spacing: 0.5rem;
+  color: var(--bgc-2);
+}
+
+.info{
+  width: 65vw;
+  height: 10vh;
+}
+
+.info>div{
+  width: 50vw;
+  height: 10vh;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  justify-content: center;
+
+}
+.info>div>p{
+  width: 40vw;
+  height: 2.5vh;
+  color: var(--bgc-2);
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.synop{
+  width: 95vw;
+  height: 13vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.synop>h1{
+  width: 90vw;
+  height: 5vh;
+}
+.synop>p{
+  width: 90vw;
+  height: 5vh;
+}
+
+  </style>
+</head>
+<body>
+ <div id="root">
+  <div class="footage">
+     <div>
+      <div></div>
+      <div></div>
+     </div>
+  </div>
+  <!-- footage screen -->
+
+  <div class="main">
+    <div class="icons">
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- icons -->
+    <div class="title flex-center">
+      <div class="flex-center">
+        <h1 class="flex-center">TITLE</h1>
+      </div>
+    </div>
+    <!-- title  -->
+
+    <div class="info flex-center">
+      <div>
+        <p>Direc. Bong Jun Ho</p>
+        <p>Feat. Song Gang Ho</p>
+      </div>
+    </div>
+    <!-- 영화 기본정보 -->
+  <div class="synop">
+    <h1>synopsis</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempora soluta iste voluptate provident fuga eveniet sunt recusandae delectus earum odit necessitatibus officia, cupiditate commodi vero, quasi, ratione velit doloremque.<p>
+  </div>
+  <!-- 시놉 -->
+  </div>
+ </div>
+</body>
+</html>

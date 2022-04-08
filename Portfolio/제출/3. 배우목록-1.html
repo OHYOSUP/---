@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="basic.css">
+  <title>Document</title>
+  <style>
+    :root {
+      --color-1: #ffffff;
+      --color-2: #636363;
+      --color-3: #313131;
+      --color-4: #0f0f0f;
+      --color-5: #f82222;
+
+      --font-size-1: 2.5rem;
+      --font-size-2: 1.8rem;
+      --font-size-3: 1.4rem;
+      --font-size-4: 1rem;
+    }
+
+    #root{
+      background-color: var(--color-4);
+      flex-direction: column;
+    }
+
+    .top{
+      width: 100vw;
+      height: 5vh;
+    }
+
+    .top>div{
+      width: 90vw;
+      height: 5vh;
+      color: var(--color-2);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .top>div>ul{
+      width: 98vw;
+      height: 5vh;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      z-index: 1;
+    }
+
+
+    .top>div>ul>li{
+      width: 10vw;
+      height: 3vh;
+      z-index: 1;
+    }
+
+    .top>div:nth-child(1)>div:nth-child(2){
+      width: 100vw;
+      height: 0.3vh;
+      background-color: var(--color-1);
+    }
+
+    .container{
+      width: 100vw;
+      height: 70vh;
+      z-index: 2;
+    }
+
+    .container>div{
+      width: 20vw;
+      height: 10vh;
+      list-style-type: none;
+
+    }
+    .container>div>ul{
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+
+    }
+    .container>div>ul>li:nth-child(4){
+      width: 25vw;
+      height: 10vh;
+      font-size: var(--font-size-1);
+      color: var(--color-2);
+    }
+
+/* 이주영 */
+
+.container>div>ul>li:hover{
+  color: rgb(255, 22, 22);
+}
+
+
+    .container>div>ul>li:nth-child(3){
+      width: 20vw;
+      height: 10vh;
+      font-size: var(--font-size-2);
+      color: var(--color-3);
+    }
+    /* 구교환 */
+    .container>div>ul>li:nth-child(5){
+      width: 20vw;
+      height: 10vh;
+      font-size: var(--font-size-3);
+      color: var(--color-3);
+    }
+    /* 엄태구 */
+    .container>div>ul>li:nth-child(1){
+      width: 20vw;
+      height: 10vh;
+      font-size: var(--font-size-4);
+      color: var(--color-4);
+    }
+    /* 변요한 */
+    .container>div>ul>li:nth-child(6){
+      width: 20vw;
+      height: 10vh;
+      font-size: var(--font-size-4);
+      color: var(--color-4);
+    }
+    /* 전여빈 */
+    .container>div>ul>li:nth-child(2){
+      width: 20vw;
+      height: 10vh;
+      font-size: var(--font-size-4);
+      color: var(--color-4);
+    }
+    /* 이민지 */
+    .container>div:nth-child(2){
+      width: 100vw;
+      height: 70vh;
+      background-color: var(--color-3);
+      opacity: 50%;
+      
+      position: absolute;
+      z-index: 0;
+    }
+    /* 배우리스트 */
+
+
+    .bottom{
+      width: 100vw;
+      height: 10vh;
+    }
+    
+    .bottom>ul{
+    width: 120vw;
+    height: 10vh;
+    
+     list-style-type: none;
+     position: absolute;
+     color: var(--color-5);
+
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+    }
+
+    .botoom>ul>li{
+      width: 8vw;
+      height: 8vh;
+    }
+    /* 영화 리스트 */
+  </style>
+</head>
+<body>
+  <div id="root" class= "flex-center">
+    <div class="top flex-center">
+      <div>
+        <ul>
+          <li>NEWS</li>
+          <li>RISING</li>
+          <li>MUST</li>
+        </ul>
+        <div></div>
+      </div>
+
+    </div>
+    <div class="container flex-center">
+      <div class="flex-center">
+        <ul class="flex-center">
+          <li class="flex-center">변요한</li>
+          <li class="flex-center">이민지</li>
+          <li class="flex-center">구교환</li>
+          <li class="lee flex-center">이주영</li>
+          <li class="flex-center">엄태구</li>
+          <li class="flex-center">전여빈</li>
+        </ul>
+      </div>
+      <!-- list -->
+      <div></div>
+    </div>
+    
+    <div class="bottom flex-center">
+      <ul>
+        <li>여자들</li>
+        <li>언니가 죽었다</li>
+        <li>예술의 목적</li>
+        <li>죄 많은 소녀</li>
+        <li>여배우는 오늘도</li>
+      </ul>
+    </div>
+    <!-- 영화 리스트 -->
+  </div>
+</body>
+</html>

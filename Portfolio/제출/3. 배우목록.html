@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="basic.css">
+  <title>Document</title>
+  <style>
+    :root {
+      --color-1: #c4c4c4;
+      --color-2: #636363;
+      --color-3: #313131;
+      --color-4: #0f0f0f;
+
+      --font-size-1: 2.5rem;
+      --font-size-2: 1.8rem;
+      --font-size-3: 1.4rem;
+      --font-size-4: 1rem;
+    }
+
+    #root{
+      background-color: var(--color-4);
+    }
+
+    .container{
+      width: 100vw;
+      height: 70vh;
+      color: var(--color-1)
+    }
+
+    .container>div{
+      width: 20vw;
+      height: 10vh;
+      list-style-type: none;
+
+
+    }
+    .container>div>ul{
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+
+    }
+    .container>div>ul>li:nth-child(4){
+      width: 25vw;
+      height: 10vh;
+      font-size: var(--font-size-1);
+    }
+    .container>div>ul>li:nth-child(3){
+      width: 20vw;
+      height: 10vh;
+      font-size: var(--font-size-2)
+    }
+    .container>div>ul>li:nth-child(5){
+      width: 20vw;
+      height: 10vh;
+      font-size: var(--font-size-3)
+    }
+    .container>div>ul>li:nth-child(1){
+      width: 20vw;
+      height: 10vh;
+      font-size: var(--font-size-4)
+    }
+    .container>div>ul>li:nth-child(6){
+      width: 20vw;
+      height: 10vh;
+      font-size: var(--font-size-4)
+    }
+    .container>div>ul>li:nth-child(2){
+      width: 20vw;
+      height: 10vh;
+      font-size: var(--font-size-4)
+    }
+  </style>
+</head>
+<body>
+  <div id="root" class= "flex-center">
+    <div class="container flex-center">
+      <div class="flex-center">
+        <ul class="flex-center">
+          <li class="flex-center">변요한</li>
+          <li class="flex-center">이민지</li>
+          <li class="flex-center">구교환</li>
+          <li class="flex-center">이주영</li>
+          <li class="flex-center">엄태구</li>
+          <li class="flex-center">전여빈</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="basic.css ">
+  <title>Document</title>
+  <style>
+    .flex-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* style   */
+
+     nav{
+       width: 95vw;
+       height: 8vh;
+
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: flex-end;
+     }
+     nav div{
+       width: 8vw;
+       height: 0.3vh;
+       background-color: rgb(230, 230, 230);
+       margin-top: 10px;
+     }
+
+     #root>div:nth-child(2){
+       width: 100vw;
+       height: 25vh;
+       z-index: 1;
+     }
+
+     .image{
+       width: 100vw;
+       height: 25vh;
+       display: flex;
+       align-items: flex-end;
+
+       position: absolute;
+       z-index: 2;
+     }
+
+     .image>div{
+       width: 100vw;
+       height: 45vh;
+       /* background-image: url(262.jpg); */
+       background-color: rgb(63, 63, 63);
+       background-size: cover;
+       position: absolute;
+       z-index: 2;
+       border-radius:  20px;
+     }
+
+     .bottom{
+       width: 100vw;
+       height: 67vh;
+
+       background-color: rgb(134, 134, 134);
+       flex-direction: column;
+       justify-content: center;
+
+        color: rgb(204, 204, 204);
+      z-index: 1;
+     }
+
+     .bottom>div:nth-child(1){
+      width: 95vw;
+      height: 14vh;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+     }
+
+     .bottom>div:nth-child(2){
+       width: 95vw;
+       height: 13vh;
+     }
+
+     .screen{
+       width: 150vw;
+       height: 62vh;
+       
+       display: flex;
+       justify-content: space-around;
+       align-items: flex-end;
+
+       position: absolute;
+       z-index: 2;
+       
+     }
+
+     .screen>div{
+       width: 40vw;
+       height: 15vh;
+       background-color: rgb(185, 185, 185);
+       border: 1px solid black;
+
+
+       z-index: 3;
+     }
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <nav>
+      <div></div>
+      <div></div>
+      <div></div>
+    </nav>
+    <!-- 햄버거 -->
+
+    <div></div>
+
+    <div class="image">
+      <div></div>
+    </div>
+
+    <div class="bottom flex-center">
+      <div>
+        <h1>이유미</h1>
+      </div>
+      <div class="flex-center">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, nostrum ex. Autem inventore obcaecati odio distinctio doloribus sequi assumenda! Eligendi ut dicta possimus at voluptatum sit, facere quasi quia soluta.</p>
+      </div>
+      <div class="screen">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+*{margin: 0; padding: 0;}
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 95vw;
+  height: 5vh;
+  margin: 2.5vw;
+  background-color: lightblue;
+}
+
+header {
+  width: 47vw;
+  height: 62vh;
+  background-color: salmon;
+
+  position: absolute;
+  left: 2.5vw;
+}
+
+.root2{
+  position: relative;
+}
+
+.root2> :nth-child(1){
+  width: 17vw;
+  height: 40vh;
+  background-color: salmon;
+
+  position: absolute;
+  left: 55vw;
+  top: 5vh;
+}
+.root2> :nth-child(2){
+  width: 17vw;
+  height: 40vh;
+  background-color: salmon;
+
+  position: absolute;
+  left: 80.5vw;
+  top: 5vh;
+}
+.root2 p{
+  width: 42.5vw;
+
+  position: absolute;
+  left: 55vw;
+  top: 50vh;
+
+}
+.root3{
+  width: 95vw;
+  height: 25vh;
+  margin: 2.5vw;
+  background-color: salmon;
+
+  position: relative;
+  top: 65vh;
+}
+
+  </style>
+</head>
+<body>
+<div class="container"></div>
+<header></header>
+  <div class="root"></div>
+<div class="root2">
+  <div></div>
+  <div></div>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime reiciendis harum id, ex minima architecto ducimus laborum beatae adipisci esse consequatur sint nobis nam alias inventore? Dignissimos impedit voluptate aliquid!</p>
+</div>
+<div class="root3">
+
+</div>
+</body>
+</html>

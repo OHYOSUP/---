@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예제</title>
+<style>
+  *{margin: 0; padding:0;}
+  ul{
+    list-style-type: none;
+  }
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: salmon;
+}
+
+.container > :nth-child(1){
+  height: 10vh;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container> :nth-child(1) ul{
+  width: 90vw;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container> :nth-child(1) ul li{
+  margin: 8px;
+}
+
+.container> :nth-child(2){
+  height: 70vh;
+  background-color: darksalmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.container> :nth-child(2) :nth-child(1){
+border: 1px solid red;
+display: flex;
+justify-content: center;
+}
+
+.container> :nth-child(2) :nth-child(2){
+  border: 1px solid blue;
+  width: 50vw;
+  height: 5vh;
+}
+
+.container> :nth-child(2) :nth-child(3){
+border: 1px solid green;
+width: 20vw;
+height: 5vh;
+}
+
+.container> :nth-child(3){
+
+height: 20vh;
+background-color: cadetblue;
+
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: small;
+}
+.container> :nth-child(3) p {
+
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div>
+    <ul>
+      <li>menu-1</li>
+      <li>menu-2</li>
+      <li>menu-3</li>
+      <li>menu-4</li>
+    </ul>
+  </div>
+
+  <div>
+    <h1>logo</h1>
+      <div>search field</div>
+    <div>button</div>
+  </div>
+
+
+  <div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ea voluptatibus ipsum cumque odio facilis non temporibus quidem id corporis, vel consequatur quis aliquam ipsam fugiat corrupti? Repellendus, assumenda tenetur.
+    </p>
+  </div>
+</div>
+</body>
+</html>

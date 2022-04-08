@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    .display-flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text-style{
+      font-size: 11rem;
+      letter-spacing: 4rem;
+    }
+
+    .index-2{
+      position: relative;
+      z-index: 3;
+    }
+
+    /* style  */
+
+    .root{
+      width: 100vw;
+      height: 100vh;
+    }
+    .container{
+      width: 100vw;
+      height: 100vh;
+      background-color: #404040;
+      
+      flex-direction: column;
+    }
+
+
+    .image{
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      position: absolute;
+      flex-wrap: wrap;
+ 
+    }
+
+   
+
+    .image>div:nth-child(1){
+      width: 30vw;
+      height: 60vh;
+
+      display:flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      
+    }
+
+    .image>div:nth-child(1)>div:nth-child(1){
+      width: 35vw;
+      height: 15vh;
+      background-color: #c4c4c4;
+      border: 3px solid black;
+
+      
+      z-index: 1;
+    }
+   
+    .image>div:nth-child(2){
+      width: 20vw;
+      height: 50vh;
+
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .image>div:nth-child(2)>div:nth-child(1){
+      width: 20vw;
+      height: 20vh;
+      background-color: #c4c4c4;
+      border: 3px solid black;
+      
+      z-index: 1;
+    }
+
+    .image>div:nth-child(3){
+      width: 30vw;
+      height: 60vh;
+    
+      
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      z-index: 2;
+    }
+
+    .image>div:nth-child(3)>div:nth-child(1){
+      width: 25vw;
+      height: 20vh;
+      background-color: #c4c4c4;
+      border: 3px solid black;
+      
+      z-index: 1;
+    }
+
+    .image>div:nth-child(4){
+      width: 20vw;
+      height: 50vh;
+    
+      
+      display: flex;
+      justify-content: first-start;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .image>div:nth-child(4)>div:nth-child(1){
+      width: 20vw;
+      height: 20vh;
+      background-color: #c4c4c4;
+      border: 3px solid black;
+      
+      z-index: 1;
+    }
+
+
+    .image>div:nth-child(5){
+      width: 96vw;
+      height: 30vh;
+
+      display:flex;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+
+    .image>div:nth-child(5)>div:nth-child(1){
+      width: 25vw;
+      height: 20vh;
+      background-color: #c4c4c4;
+      border: 3px solid black;
+
+      z-index: 1;
+    }
+
+    .image>div:nth-child(5)>div:nth-child(2){
+      width: 25vw;
+      height: 30vh;
+      background-color: #c4c4c4;
+      border: 3px solid black;
+      
+      z-index: 1;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div class="root display-flex">
+    <div class="container display-flex">
+      <div class="text_pilgrimage display">
+        <h1 class="text-style display-flex index-2">PIL</h1>
+        <h2 class="text-style display-flex index-2">GRI</h2>
+        <h3 class="text-style display-flex index-2">MA</h3>
+        <h4 class="text-style display-flex index-2">GE</h4>
+      </div>
+    </div>
+
+    <!-- PILGRIMAGE 글씨 -->
+  <div class="image">
+    <div>
+     <div class="display-flex">
+       <p>image</p>
+     </div>
+    </div>
+
+   <div>
+     <div class="display-flex">
+        <p>image</p>
+     </div>
+    </div>
+
+    <div>
+      <div class="display-flex">
+        <p>image</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="display-flex">
+        <p>image</p>
+      </div>
+    </div>
+
+   <div>
+     <div class="display-flex">
+      <p>image</p>
+     </div>
+     <div class="display-flex">
+      <p>image</p>
+     </div>
+   </div>
+  </div>
+  <!-- 이미지상자 -->
+
+  
+</div>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+    .flex-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    #root{
+      width: 100vw;
+      height: 100vh;
+      background-color: #c4c4c4;
+    }
+
+    .top{
+      width: 100vw;
+      height: 8vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    .top>div{
+      width: 5vw;
+      height: 0.3vh;
+      background-color: #a3a3a3;
+      
+      margin-top: 3px;
+      margin-right: 10px;
+    }
+
+    #root>div:nth-child(2){
+      width: 100vw;
+      height: 5vh;
+    }
+
+    .main{
+      width: 100vw;
+      height: 20vh;
+      
+      display: flex;
+      margin-bottom: 20px;
+      
+    }
+
+    .main>div:nth-child(1){
+      width: 40vw;
+      height: 20vh;
+      background-color: #e6e6e6;
+      border-radius: 20px;
+
+      margin-left: 30px;
+    }
+
+    .main>div:nth-child(2){
+      width: 50vw;
+      height: 20vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main>div:nth-child(2) h1{
+      width: 20vw;
+    }
+    .main>div:nth-child(2) p{
+      width: 40vw;
+      margin-top: 10px;
+      
+    }
+
+    /* 첫번째 상자 */
+
+    .list{
+      width: 100vw;
+      height: 52vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .list>div{
+      width: 90vw;
+      height: 15vh;
+      background-color: #8f99b9;
+      border-radius: 20px;
+
+      display: flex;
+    }
+
+    .list>div:nth-child(1)>div:nth-child(1){
+      width: 23vw;
+      height: 21vw;
+      border: 1px solid rgb(33, 33, 63);
+      border-radius: 20px;
+
+      margin: 20px;
+    }
+
+    .list>div:nth-child(1)>div:nth-child(2){
+      width: 70vw;
+      height: 15vh;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .list>div:nth-child(1)>div:nth-child(2) h1{
+      font-size: 1.5rem;
+    }
+    .list>div:nth-child(1)>div:nth-child(2) p{
+      font-size: 0.8rem;
+    }
+
+   .critic{
+     width: 55vw;
+     height: 5vh;
+
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+   }
+    .critic>div:nth-child(1){
+      width: 10vw;
+      height: 3vh;
+      margin-top: 10px;
+      border: 1px solid black;
+      border-radius: 20px;
+      
+      font-size: 1rem;
+    }
+    .critic>div:nth-child(2){
+      width: 7vw;
+      height: 7vw;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+
+    /* 첫번재 상자 */
+    .second>div{
+      width: 90vw;
+      height: 15vh;
+      background-color: #8f99b9;
+      border-radius: 20px;
+
+      display: flex;
+    }
+
+    .second>div:nth-child(1)>div:nth-child(1){
+      width: 23vw;
+      height: 21vw;
+      border: 1px solid rgb(33, 33, 63);
+      border-radius: 20px;
+
+      margin: 20px;
+    }
+
+    .second>div:nth-child(1)>div:nth-child(2){
+      width: 70vw;
+      height: 15vh;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .second>div:nth-child(1)>div:nth-child(2) h1{
+      font-size: 1.5rem;
+    }
+    .second>div:nth-child(1)>div:nth-child(2) p{
+      font-size: 0.8rem;
+    }
+
+   .critic2{
+     width: 55vw;
+     height: 5vh;
+
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+   }
+    .critic2>div:nth-child(1){
+      width: 10vw;
+      height: 3vh;
+      margin-top: 10px;
+      border: 1px solid black;
+      border-radius: 20px;
+      
+      font-size: 1rem;
+    }
+    .critic2>div:nth-child(2){
+      width: 7vw;
+      height: 7vw;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+
+    /* 두번째 상자 */
+
+    .third>div{
+      width: 90vw;
+      height: 15vh;
+      background-color: #8f99b9;
+      border-radius: 20px;
+
+      display: flex;
+    }
+
+    .third>div:nth-child(1)>div:nth-child(1){
+      width: 23vw;
+      height: 21vw;
+      border: 1px solid rgb(33, 33, 63);
+      border-radius: 20px;
+
+      margin: 20px;
+    }
+
+    .third>div:nth-child(1)>div:nth-child(2){
+      width: 70vw;
+      height: 15vh;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .third>div:nth-child(1)>div:nth-child(2) h1{
+      font-size: 1.5rem;
+    }
+    .third>div:nth-child(1)>div:nth-child(2) p{
+      font-size: 0.8rem;
+    }
+
+   .critic3{
+     width: 55vw;
+     height: 5vh;
+
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+   }
+    .critic3>div:nth-child(1){
+      width: 10vw;
+      height: 3vh;
+      margin-top: 10px;
+      border: 1px solid black;
+      border-radius: 20px;
+      
+      font-size: 1rem;
+    }
+    .critic3>div:nth-child(2){
+      width: 7vw;
+      height: 7vw;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+
+    .footer {
+      width: 100vw;
+      height: 12vh;
+
+    }
+    .footer>div:nth-child(1){
+      width: 87vw;
+      height: 8vh;
+      background-color: #516abd;
+
+      border-radius: 30px;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .footer>div:nth-child(1)>div{
+      width: 7vw;
+      height: 7vw;
+      background-color: #a3a3a3;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="top">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div></div>
+
+  <div class="main">
+    <div></div>
+    <div>
+      <h1>전여빈</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis facilis dolor quidem, sint dicta numquam delectus iusto ratione.</p>
+    </div>
+  </div>
+ 
+  <div class="list">
+    <div>
+      <div></div>
+      <div>
+        <h1>예술의 목적</h1>
+        <p>KORㅣFictionㅣ15m</p>
+        <div class="critic">
+          <div class="flex-center">
+            <p>4.5</p>
+          </div>
+            <div></div>
+        </div>
+      </div>
+    </div>
+    <!-- 첫번째 상자 -->
+    <div class="second">
+      <div>
+        <div></div>
+        <div>
+          <h1>언니가 죽었다</h1>
+          <p>KORㅣFictionㅣ13m</p>
+          <div class="critic2">
+            <div class="flex-center">
+              <p>4.5</p>
+            </div>
+              <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 두번째 상자 -->
+
+    <div class="third">
+      <div>
+        <div></div>
+        <div>
+          <h1>언니가 죽었다</h1>
+          <p>KORㅣFictionㅣ13m</p>
+          <div class="critic3">
+            <div class="flex-center">
+              <p>4.5</p>
+            </div>
+              <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- list 끝 -->
+
+    <div class="footer flex-center">
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+</html>

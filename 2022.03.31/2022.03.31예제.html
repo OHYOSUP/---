@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.root{
+  width: 100vw;
+  height: 100vh;
+  background-color: #ccc;
+
+}
+
+.header{
+  width: 100vw;
+  height: 20vh;
+}
+
+.main{
+  width: 93vw;
+  height: 45vh;
+  
+  border-radius: 60px;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  z-index: 3;
+}
+
+.article{
+width: 90vw;
+height: 45vh;
+background-color: #fff;
+/* border-radius: 60px; */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.article>div{
+  width: 70vw;
+  height: 8vh;
+  
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.article>div ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.article>div ul li{
+  margin-left: 40px;
+}
+
+/* list들 사이를 띄우기 위해 margin-left를 사용했는데 혹시 다른 방법이 있는지 궁금합니다. */
+
+.article>section{
+  width: 70vw;
+  height: 30vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.article>section div{
+  width: 70vw;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.article>section div:nth-child(1) {
+  width: 2vw;
+  height: 2vw;
+  background-color: aquamarine;
+  }
+
+
+h1{
+  height: 10vh;
+  font-size: 30px;
+  color: #ccc;
+}
+
+.article>section p {
+  color: #ccc;
+}
+
+/* 가운데박스 끝 */
+
+.footer{
+  width: 90vw;
+  height: 35vh;
+  background-color: rgb(92, 92, 92);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  
+  z-index: 2;
+}
+
+.footer>div{
+  width: 23vw;
+  height: 30vh;
+  text-align: justify;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer>div:nth-child(1) h2{
+  width: 25vw;
+  height: 5vh;
+  font-size: 25px;
+  color: rgb(141, 141, 141);
+}
+.footer>div:nth-child(2) h3{
+  width: 25vw;
+  height: 5vh;
+  font-size: 25px;
+  color: rgb(141, 141, 141);
+}
+.footer > div:nth-child(3) h4{
+  width: 25vw;
+  height: 5vh;
+  font-size: 25px;
+  color: rgb(141, 141, 141);
+}
+
+/* .footer>div:nth-child(3) h4{ 
+   .footer>div :nth-child(3) h4{
+    위에서 div 다음 띄어쓰기 차이인데 값이 다르게 나옵니다.
+    왜 다르게 나오는건지 알고싶습니다.*/
+
+.footer>div p{
+  color: rgb(141, 141, 141);
+}
+/* 바닥 끝 */
+.side{
+display: flex;
+justify-content: flex-end;
+align-content: flex-end;
+}
+
+.side>div{
+  width: 10vw;
+  height: 80vh;
+  background-color: rgb(92, 92, 92);
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 50px; */
+  position: absolute;
+
+}
+
+/* 사이드바를 포지션이 아닌 flex로 위치시키는 방법이 있을까요? */
+
+
+.side>div:nth-child(1)>div:nth-child(1){
+  width: 3vw;
+  height: 60vh;
+  background-color: #fff;
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.side>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+  width: 2.5vw;
+  height: 10vh;
+  background-color: black;
+  border-radius: 60px;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="root">
+    <div class="header">
+    </div>
+    <!-- 헤드룸 -->
+    <div class="side">
+      <div>
+        <div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--사이드바 -->
+    <div class="main">
+      <div class="article">
+        <div>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ul>
+        </div>
+        <section>
+         
+          <h1>lorem ipsum dolor sit amet</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto dolore repellat molestiae reiciendis perferendis hic temporibus quos vel ea consequatur. Qui voluptas dicta necessitatibus doloribus odit reprehenderit vitae fugiat quibusdam delectus magni totam est porro repudiandae excepturi, itaque, in nisi facere eum doloremque error, ut ab nostrum enim. Expedita dolor repellat sequi cum labore impedit architecto hic, asperiores corporis, officiis suscipit! Explicabo sed rerum esse iure fugit similique eligendi eius!</p>
+          <div>
+            <div></div>
+          </div>
+        </section>
+      </div>
+  </div>
+        <!--가운데박스 끝 -->
+      
+    <div class="footer">
+      <div>
+        <h2>
+          Lorem ipsim dolor sit amet
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos asperiores totam blanditiis quas possimus laudantium vero eveniet eum nisi, optio eaque earum! Nostrum numquam libero iusto, velit magni dolorem fugit quaerat dolores voluptate eos ab aliquam sint. Dolorem reprehenderit beatae in quis. Est asperiores inventore maxime. Reiciendis quia rerum dolores.</p>
+      </div>
+      <div>
+        <h3>
+          Lorem ipsim dolor sit amet
+        </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos asperiores totam blanditiis quas possimus laudantium vero eveniet eum nisi, optio eaque earum! Nostrum numquam libero iusto, velit magni dolorem fugit quaerat dolores voluptate eos ab aliquam sint. Dolorem reprehenderit beatae in quis. Est asperiores inventore maxime. Reiciendis quia rerum dolores.</p>
+      </div>
+      <div>
+        <h4>
+          Lorem ipsim dolor sit amet
+        </h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos asperiores totam blanditiis quas possimus laudantium vero eveniet eum nisi, optio eaque earum! Nostrum numquam libero iusto, velit magni dolorem fugit quaerat dolores voluptate eos ab aliquam sint. Dolorem reprehenderit beatae in quis. Est asperiores inventore maxime. Reiciendis quia rerum dolores.</p>
+      </div>
+    </div>
+      <!-- 바닥 끝 -->
+
+  <!-- 사이드 끝 -->
+
+</body>
+</html>

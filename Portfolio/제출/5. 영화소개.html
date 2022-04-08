@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+#root{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image{
+  width: 99vw;
+  height: 65vh;
+  background-color: #c4c4c4;
+}
+
+.title{
+  width: 95vw;
+  height: 10vh;
+}
+
+.title>h1{
+  width: 35vw;
+  height: 7vh;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 1.5rem;
+}
+
+#root>div:nth-child(3){
+  width: 99vw;
+  height: 0.2vh;
+  background-color: #c4c4c4;
+}
+
+.synop{
+  width: 98vw;
+  height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #c4c4c4;
+}
+
+.icon{
+  width: 98vw;
+  height: 10vw;
+
+  display: flex;
+  align-items: flex-end;
+  
+}
+
+.icon>div:nth-child(1){
+  width: 30px;
+  height: 30px;
+  background-color: #c4c4c4;
+}
+
+.icon>div:nth-child(2){
+  width: 30px;
+  height: 30px;
+  background-color: #c4c4c4;
+  margin-left: 3vw;
+}
+
+footer{
+  width: 98vw;
+  height: 8vh;
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+  footer>ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+  }
+
+  footer>ul>li{
+    display: flex;
+    justify-content: center;
+    color: #c4c4c4;
+    width: 12vw;
+    height: 2vh;
+  }
+  </style>
+</head>
+<body>
+<div id="root">
+  <div class="image"></div>
+  <div class="title">
+    <h1>죄 많은 소녀</h1>
+    <p>Direc 김의석</p>
+  </div>
+  <!-- 기본정보 -->
+  <div></div>
+  <!-- 선 -->
+
+  <div class="synop">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab eligendi quidem voluptatibus facilis aliquid aliquam sequi, autem impedit est quos dolorem odio adipisci dolorum iusto vel officia doloribus culpa natus.</p>
+  </div>
+    <!-- 시놉 -->
+  <div class="icon">
+    <div></div>
+    <div></div>
+  </div>
+  <!-- 아이콘 -->
+
+  <footer>
+    <ul>
+      <li>title</li>
+      <li>title</li>
+      <li>title</li>
+      <li>title</li>
+      <li>title</li>
+    </ul>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="basic.css">
+  <title>Document</title>
+  <style>
+    .flex-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #root{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+#root>div:nth-child(1){
+  width: 100vw;
+  height: 45vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#root>div:nth-child(1)>div:nth-child(1){
+  width: 80vw;
+  height: 0.3vh;
+  background-color: rgb(241, 241, 241);
+  margin-bottom: 40px;
+}
+#root>div:nth-child(1)>div:nth-child(2){
+  width: 80vw;
+  height: 20vh;
+  flex-direction: column;
+  text-align: center;
+  line-height: 40px;
+}
+
+#root>div:nth-child(1)>div:nth-child(3){
+  width: 80vw;
+  height: 0.3vh;
+  background-color: rgb(241, 241, 241);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+  /* headline */
+
+.main{
+  width: 98vw;
+  height: 30vh;
+  background-color: rgb(245, 245, 245);
+}
+
+.readmore{
+  width: 90vw;
+  height: 20vh;
+
+  color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.readmore>div:nth-child(1){
+  width: 21vw;
+  height: 10vh;
+  
+}
+
+.readmore>div:nth-child(1)>div:nth-child(2){
+
+  width: 20vw;
+  height: 4vh;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.readmore>div:nth-child(1)>div:nth-child(2)>div:nth-child(1){
+  width: 20vw;
+  height: 0.3vw;
+  background-color: rgb(245, 245, 245);
+
+  position: absolute;
+}
+.readmore>div:nth-child(1)>div:nth-child(2)>div:nth-child(2){
+  width: 3vw;
+  height: 0.3vw;
+  background-color: rgb(245, 245, 245);
+  transform: rotate(45deg);
+
+  position: absolute;
+}
+.readmore>div:nth-child(1)>div:nth-child(2)>div:nth-child(3){
+  width: 3vw;
+  height: 0.3vw;
+  background-color: rgb(245, 245, 245);
+  transform: rotate(135deg);
+
+  position: absolute;
+}
+
+/* 화살표 어떻게만드는거지?ㅇㅅㅇ */
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div>
+      <div></div>
+      <div class="flex-center">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>hic obcaecati molestias ullam tenetur possimus maxime iure animi</p>
+        <p> modi accusamus error, rerum quod illum blanditiis alias vero in dolor?</p>
+      </div>
+      <div></div>
+    </div>
+    <!-- headline -->
+    <div class="main"></div>
+
+    <div class="readmore">
+      <div>
+        <p>Read more</p>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+</html>

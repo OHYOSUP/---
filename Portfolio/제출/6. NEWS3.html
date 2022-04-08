@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="basic.css">
+  <title>Document</title>
+  <style>
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header>div:nth-child(1){
+  width: 100vw;
+  height: 10vw;
+
+  margin-right: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+header>div:nth-child(1)>div:nth-child(1){
+  width: 5vw;
+  height: 0.2vh;
+  background-color: var(--color-2);
+  margin-right: 10px; 
+}
+header>div:nth-child(1)>div:nth-child(2){
+  width: 5vw;
+  height: 0.2vh;
+  background-color: var(--color-2);
+  margin-top: 3px;
+  margin-right: 10px;
+}
+header>div:nth-child(1)>div:nth-child(3){
+  width: 5vw;
+  height: 0.2vh;
+  background-color: var(--color-2);
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+
+header>h1{
+  width: 100vw;
+  height: 10vh;
+
+  color: rgb(82, 82, 82);
+  display: flex;
+  align-items: flex-end;
+  margin-left: 30px;
+}
+header>div:nth-child(3){
+  width: 40vw;
+  height: 0.3vh;
+  background-color: var(--color-2);
+  margin-left: 30px;
+}
+
+main{
+  width: 98vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+main>div{
+  width: 98vw;
+  height: 40vh;
+  background-color: var(--color-1);
+}
+
+.footer{
+  width: 98vw;
+  height: 40vh;
+
+  flex-direction: column;
+}
+
+
+.footer>div:nth-child(1){
+  width: 80vw;
+  height: 20vh;
+  line-height: 30px;
+  
+}
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <h1>lorem Ipsum</h1>
+      <div></div>
+    </header>
+
+    <main>
+      <div></div>
+    </main>
+
+    <div class="footer flex-center">
+      <div class="flex-center">
+        <div>
+          <p style="color: var(--color-2);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dignissimos unde ipsam labore cum delectus nobis aut voluptatum. Doloribus perspiciatis nobis blanditiis soluta praesentium hic saepe adipisci! Pariatur voluptates molestias laudantium, accusantium ipsam ad quaerat fugit hic corrupti laboriosam eaque cum natus beatae aliquam explicabo ullam quae a totam optio perspiciatis nostrum. Qui quia natus quaerat assumenda aliquid magnam eveniet, labore itaque minus voluptate autem provident voluptatum </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

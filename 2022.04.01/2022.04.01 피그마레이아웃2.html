@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin:0; padding: 0; box-sizing: border-box;}
+
+:root{
+  --bgc-g : gray;
+  --bgc-lg : lightgray;
+  --bgc-wh : white;
+  --bgc-dw : rgb(165, 165, 165);
+}
+
+.flex{
+  display: flex;
+}
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
+
+/* stlye */
+
+    .root{
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--bgc-g);
+
+
+    }
+
+    .container{
+      width: 20vw;
+      height: 70vh;
+     background-color: var(--bgc-lg);
+      
+      justify-content: center;
+    }
+
+    .header{
+      width: 18vw;
+      height: 20vh;
+      /* background-color: var(--bgc-wh); */
+    }
+
+    .header> div:nth-child(1){
+      width: 9vw;
+      height: 20vh;
+
+      justify-content: center;
+      align-items: flex-end;
+    }
+    h1{
+      font-size: 100px;
+    }
+
+    .header> div:nth-child(2){
+      width: 9vw;
+      height: 20vh;
+
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    .header> div:nth-child(2)>div {
+      width: 7vw;
+      height: 15vh;
+      background-color: var(--bgc-wh);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="root flex flex-center">
+    <div class="container flex">
+      <div class="header flex ">
+        <div class="flex">
+          <h1>WE</h1>
+        </div>
+        <div class="flex">
+          <div></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

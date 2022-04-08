@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+
+    .root{
+      width: 100vw;
+      height: 100vh;
+      background-color: #c4c4c4;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mobile{
+      width: 428px;
+      height: 926px;
+      background-color: rgb(231, 225, 225);
+      border-radius: 20px;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+    .mobile> :nth-child(1){
+      width: 428px;
+      height: 630px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      background-color: rgba(223, 209, 209, 0.2);
+    }   
+    .mobile>:nth-child(2){
+      width: 428px;
+      height: 296px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      background-color: black;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      
+    }
+.mobile>:nth-child(2) div{
+
+  width: 328px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 8px;
+  color: rgb(161, 162, 163);
+  background-color: #284269;
+  display: flex;
+    /* p태그 레이아웃 잡고싶다. */
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile> div:nth-child(2) > div:nth-child(1){
+  background-color: black;
+  color: rgb(255, 255, 255);
+  justify-content:center;
+}
+
+.mobile> div:nth-child(2) > :nth-child(4){
+  background-color: black;
+  color: #c4c4c4;
+
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="root">
+    <div class="mobile">
+      <div></div>
+        <div>
+          <div>Pilgrimage</div>
+          <div>E-mail</div>  
+          <div>Password</div>
+          <div>
+          <p class="test">forgot your Id</p> 
+          <p>Sign up</p>
+          </div>
+          <div>Guest</div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

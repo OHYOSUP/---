@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="basic.css">
+  <title>Document</title>
+  <style>
+    #root{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      z-index: 1;
+    }
+
+    #root>div:nth-child(1){
+      width: 99vw;
+      height: 60vh;
+      background-color: black;
+      border: 2px solid rgb(155, 138, 40);
+
+      
+    }
+
+    .main{
+      width: 100vw;
+      height: 40vh;
+      flex-direction: column;
+      
+      position: relative;
+      z-index: 1;
+    }
+
+    .main>div:nth-child(2){
+      width: 80vw;
+      height: 20vh;
+      line-height: 30px;
+    }
+
+    /* 기본소개 끝 */
+
+    .pop{
+      width: 100vw;
+      height: 40vh;
+      background-color: rgb(70, 70, 70);
+
+      flex-direction: column;
+      position: absolute;
+      z-index: 2;
+      
+    }
+
+    .pop>div:nth-child(1){
+      width: 100vw;
+      height: 6vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .pop>div:nth-child(1) ul{
+      width: 90vw;
+      height: 3vh;
+
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .pop>div:nth-child(1) ul li{
+      height: 3vh;
+      color: aliceblue;
+    }
+    
+
+    .pop>div:nth-child(2){
+      width: 90vw;
+      height: 30vh;
+
+      display: flex;
+      align-items: center;
+      
+    }
+
+    .pop>div:nth-child(2)>div:nth-child(1){
+      width: 30vw;
+      height: 30vw;
+      background-color: #fff;
+    }
+    .pop>div:nth-child(2)>div:nth-child(2){
+      width: 50vw;
+      height: 30vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 40px;
+
+      color: rgb(230, 230, 230);
+    }
+    .pop>div:nth-child(2)>div:nth-child(2) h2{
+      height: 5vh;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div></div>
+ 
+    <div class="main flex-center">
+      <h1>이유미</h1>
+      <div class="flex-center">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magni accusamus maxime voluptates nulla? Ex itaque unde non delectus tempore architecto, dolor assumenda sit, blanditiis provident voluptatum eveniet, quos molestias!</p>
+      </div>
+      <div class="pop flex-center">
+        <div>
+          <ul>
+            <li>지금 우리 학교는</li>
+            <li>능력소녀</li>
+            <li>어른들은 몰라요</li>
+          </ul>
+        </div>
+        <div>
+          <div></div>
+          <div>
+            <h2>박화영</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste alias sed obcaecati excepturi molestiae soluta deleniti tempora molestias! Vel totam, corrupti ducimus quam natus magni consequuntur explicabo nemo laboriosam corporis.</p>
+          </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+  </div>
+</body>
+</html>
