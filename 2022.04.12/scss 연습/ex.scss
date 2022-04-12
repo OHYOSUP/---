@@ -1,0 +1,32 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+@mixin bgc($a) {
+  background-color: $a;
+}
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  @include bgc(#999);
+  @include flex-center();
+  &>div{
+    width: 50vw;
+    height: 50vh;
+
+    @include bgc(#888);
+    @include flex-center;
+
+    &>div{
+      width: 25vw;
+      height: 25vh;
+  
+      @include bgc(#777);
+      @include flex-center;
+    }
+  }
+}

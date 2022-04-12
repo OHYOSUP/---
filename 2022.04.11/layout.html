@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="basic.css">
+  <title>Document</title>
+<style>
+
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-1);
+}
+
+.plus{
+  width: 90vw;
+  height: 10vh;
+
+  display: flex;
+  align-items: flex-end;
+}
+.plus>div{
+  width: 7vw;
+  height: 0.5vw;
+  border-radius: 10px;
+  background-color: var(--color-2);
+}
+.plus>div:nth-child(1){
+  width: 7vw;
+  height: 0.5vw;
+  border-radius: 30px;
+  background-color: var(--color-2);
+
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+  /* plus */
+
+.management{
+  width: 90vw;
+  height: 17vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: var(--color-2);
+}
+
+/* top text */
+
+#root>div:nth-child(3){
+  width: 90vw;
+  height: 5vh;
+
+  display: flex;
+  justify-content: flex-end;
+
+}
+#root>div:nth-child(3)>div{
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: var(--color-2);
+  margin-left: 5px;
+}
+
+#root>div:nth-child(3)>div:nth-child(1){
+  background-color: var(--color-3);
+}
+
+/* navigation */
+
+.card{
+  width: 90vw;
+  height: 27vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  
+
+  background-color: var(--color-2);
+}
+.card>div:nth-child(1){
+  width: 87vw;
+  height: 8vh;
+
+
+  color: var(--color-1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card>div:nth-child(2){
+  width: 87vw;
+  height: 8vh;
+  
+  font-size: 2.9rem;
+}
+
+.container{
+  width: 87vw;
+  height: 25vh;
+  /* border: 1px solid salmon; */
+
+  display: flex;
+  
+  
+}
+
+.number{
+  width: 60vw;
+  height: 7vh;
+  /* border: 1px solid red; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  
+}
+
+.exp{
+  width: 53vw;
+  height: 3vh;
+
+  display: flex;
+  justify-content: space-between;
+}
+.name{
+  width: 60vw;
+  height: 3vh;
+
+  display: flex;
+  justify-content: space-around;
+  letter-spacing: 11px;
+  text-align: justify;
+}
+
+.icvisa{
+  width: 25vw;
+  height: 12vh;
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.icvisa>div:nth-child(1){
+  width: 10vw;
+  height: 10vw;
+  background-color: var(--color-3);
+}
+
+.icvisa>div:nth-child(2){
+  width: 10vw;
+  height: 10vw;
+  background-color: var(--color-3);
+  margin-top: 10px;
+}
+
+.bottom{
+  width: 87vw;
+  height: 35vh;
+  background-color: var(--color-2);
+  border-radius: 20px;
+
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.bottom>div:nth-child(1){
+  width: 83vw;
+  height: 25vh;
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-top: 2vh;
+}
+
+.bottom>div:nth-child(1)>div:nth-child(1){
+  width: 80vw;
+  height: 7vh;
+}
+
+.bottom>div:nth-child(1)>div:nth-child(1)>div:nth-child(1){
+  width: 80vw;
+  height: 3vh;
+
+  /* border: 1px solid blue; */
+
+  display: flex;
+  justify-content: space-between;
+}
+.bottom>div:nth-child(1)>div:nth-child(1)>div:nth-child(2){
+  width: 80vw;
+  height: 2vh;
+
+  border-radius: 20px;
+  background-color: var(--color-3);
+  display: flex;
+  align-items: center;
+}
+
+/* Good habit */
+
+.duolino{
+  width: 80vw;
+  height: 7vh;
+}
+
+.duolino>div:nth-child(1){
+  width: 80vw;
+  height: 3vh;
+
+  display: flex;
+  justify-content: space-between;
+}
+.duolino>div:nth-child(2){
+  width: 80vw;
+  height: 2vh;
+
+  border-radius: 20px;
+  background-color: var(--color-3);
+  display: flex;
+  align-items: center;
+}
+
+/* Duolino */
+
+.android{
+  width: 80vw;
+  height: 7vh;
+  
+}
+
+.android>div:nth-child(1){
+  width: 80vw;
+  height: 3vh;
+
+  display: flex;
+  justify-content: space-between;
+}
+.android>div:nth-child(2){
+  width: 80vw;
+  height: 2vh;
+
+  border-radius: 20px;
+  background-color: var(--color-3);
+  display: flex;
+  align-items: center;
+}
+/* Android */
+
+
+</style>
+</head>
+<body>
+  <div id="root">
+    <div class="plus">
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- + -->
+    <div class="management">
+      <h1>CARD management</h1>
+      <p>Uber Money designed By for Uber</p>
+    </div>
+    <!-- top text -->
+
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- navigation -->
+
+    <div class="card">
+      <div>
+        <p>Gold Card</p>
+      </div>
+      <div class="flex-center">
+        <h2>YOUR CARD</h2>
+      </div>
+
+        <div class=" container">
+          <div style="display: flex; flex-direction: column; align-items: center; width: 60vw; height: 25vh;">
+            <div class="number">
+              <p>0000</p>
+              <p>1111</p>
+              <p>3333</p>
+              <p>2222</p>
+            </div>
+      
+            <div class="exp">
+              <p>Gold Card</p>
+              <p>09 / 28</p>
+            </div>
+      
+            <div class="name">
+              Marilyn Monroe
+            </div>
+          </div>
+
+        <div class="icvisa">
+          <div></div>
+          <div></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bottom">
+
+      <div>
+        <div>
+          <div>
+            <h3>Good Habit</h3>
+            <p style="color: var(--color-3);">222. 333 .444. 555</p>
+          </div>
+          <div>
+            <div style="  width: 15vw; height: 2vh; background-color: var(--color-4); border-radius: 20px;"></div>
+            <div style="width: 2vw; height: 2vw; background-color: var(--color-1); border-radius: 50%; margin-left: 9vh;"></div>
+          </div>
+          <div style="margin-left: 31vw;">
+            <p style="color: var(--color-1);">45%</p>
+          </div>
+        </div>
+        <div></div>
+      
+  <!-- good habit -->
+
+
+      
+  <div class="duolino">
+    <div>
+      <h3>Duolino</h3>
+      <p style="color: var(--color-3);">333. 555 .777. 111</p>
+    </div>
+    <div>
+      <div style="  width: 40vw; height: 2vh; background-color: var(--color-4); border-radius: 20px;"></div>
+      <div style="width: 2vw; height: 2vw; background-color: var(--color-1); border-radius: 50%; margin-left: 7vh;"></div>
+    </div>
+    <div style="margin-left: 52vw;">
+      <p style="color: var(--color-1);">70%</p>
+    </div>
+  </div>
+  <div></div>
+
+
+
+<!-- Duolino -->
+
+
+  <div class="android">
+    <div>
+      <h3>Android</h3>
+      <p style="color: var(--color-3);">344. 555. 477. 777</p>
+    </div>
+    <div>
+      <div style="  width: 45vw; height: 2vh; background-color: var(--color-4); border-radius: 20px;"></div>
+      <div style="width: 2vw; height: 2vw; background-color: var(--color-1); border-radius: 50%; margin-left: 20vw;"></div>
+    </div>
+    <div style="margin-left: 63vw;">
+      <p style="color: var(--color-1);">85%</p>
+    </div>
+  </div>
+  <div></div>
+
+
+<!-- android -->
+
+  <div style="width: 70vw; height: 15vh; display: flex; align-items: flex-end;">
+    <div style="width: 30vw; height: 5vh; border-radius: 20px; background-color: var(--color-3); display: flex; justify-content: center; align-items: center;">
+      <p style="color: var(--color-4);">MORE</p>
+    </div>
+  </div>
+
+
+      </div>
+
+
+    
+
+    </div>
+
+
+  </div>
+</body>
+</html>

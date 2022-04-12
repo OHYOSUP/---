@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root > div {
+  width: 50vw;
+  height: 50vh;
+  background-color: #888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root > div > div {
+  width: 25vw;
+  height: 25vh;
+  background-color: #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=ex.css.map */
