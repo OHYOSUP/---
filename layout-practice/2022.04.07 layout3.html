@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="basic.css">
+  <title>Document</title>
+  <style>
+    #root{
+      display: flex;
+    }
+
+.left{
+  width: 22vw;
+  height: 100vh;
+  background-color: rgb(255, 251, 251);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left>div:nth-child(1){
+  width: 17vw;
+  height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.left>div:nth-child(1)>div{
+  width: 13vw;
+  height: 13vw;
+  background-color: #c4c4c4;
+}
+
+  /* 왼쪽박스 */
+
+.right{
+  width: 80vw;
+  height: 100vw;
+}
+
+.right>div:nth-child(1){
+  width: 80vw;
+  height: 25vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  margin-left: 20px;
+}
+
+.right>div:nth-child(1)>div:nth-child(2){
+  width: 40vw;
+  height: 3vh;
+  display: flex;
+}
+.right>div:nth-child(1)>div:nth-child(2)>div:nth-child(2){
+  width: 5vw;
+  height: 5vw;
+  background-color: #59ff6f;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+/* lectur box */
+
+.center{
+  width: 80vw;
+  height: 40vh;
+  
+}
+
+.center>div{
+  width: 60vw;
+  height: 60vw;
+  background-color: rgb(255, 250, 250);
+  flex-direction: column;
+
+  margin-top: 20vh;
+}
+
+.center>div:nth-child(1)>div:nth-child(1){
+  width: 30vw;
+  height: 30vw;
+  background-color: lightblue;
+  margin-bottom: 10px;
+}
+.center>div:nth-child(1) h2{
+  color: lightblue;
+  
+}
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="left">
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="right">
+      <div>
+        <h1>Lecture</h1>
+        <div>
+          <p>Web publishing C</p>
+          <div></div>
+        </div>
+      </div>
+      <!-- lecture box -->
+
+      <div class="center flex-center">
+        <div class="flex-center">
+          <div></div>
+          <h2>QRCODE CHECK</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

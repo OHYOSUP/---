@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.root{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(59, 59, 59);
+
+  position: relative;
+}
+
+.root>nav{
+  width: 100vw;
+  height: 10vh;
+}
+
+.root>nav ul{
+height: 10vh;
+list-style-type: none;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+color: rgb(214, 214, 214);
+}
+
+.root> div:nth-child(2) {
+  width: 100vw;
+  height: 10vh;
+}
+
+#main{
+  width: 100vw;
+  height: 40vh;
+  
+
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+#main>div:nth-child(1){
+  width: 60vw;
+  height: 45vh;
+  background-color: rgb(212, 212, 212);
+
+  z-index: 1;
+}
+
+#main>div:nth-child(2) {
+  width: 40vw;
+ display: flex;
+ justify-content: center;
+}
+
+#main>div:nth-child(2) h1{
+  color: rgb(212, 212, 212);
+  font-size: 100px;
+}
+
+.main2{
+  width: 100vw;
+  height: 30vh;
+  
+  display: flex;
+
+  position: absolute;
+  z-index: 3;
+}
+
+.main2> div:nth-child(1) {
+  width: 60vw;
+  height: 30vh;
+  
+
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+.main2> div:nth-child(1) h2 {
+
+color: rgb(212, 212, 212);
+margin-top: 60px;
+font-size: 50px;
+}
+
+
+.main2> div:nth-child(2) {
+  width: 40vw;
+  height: 30vh;
+  display: flex;
+  justify-content: flex-end;
+}
+.main2> div:nth-child(2) > div:nth-child(1) {
+  width: 35vw;
+  height: 30vh;
+  background-color: rgb(212, 212, 212);
+
+}
+
+
+  </style>
+</head>
+<body>
+    <div class="root">
+      <nav>
+        <ul>
+          <li>엄태구</li>
+          <li>전여빈</li>
+          <li>구교환</li>
+          <li>이민지</li>
+          <li>이주영</li>
+        </ul>
+      </nav>
+      <div></div>
+      <div id="main">
+        <div></div>
+        <div>
+          <h1>Lorem Ipsup</h1>
+        </div>
+      </div>
+      <div class="main2">
+        <div>
+          <h2>Ipsum Lorem</h2>
+        </div>
+        <div>
+          <div></div>
+        </div>
+      </div>
+
+    </div>
+</body>
+</html>

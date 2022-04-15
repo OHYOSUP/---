@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="basic.css">
+  <title>Document</title>
+  <style>
+
+
+.header {
+  width: 100vw;
+  height: 35vh;
+}
+
+.header>h1{
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+}
+
+.main{
+  width: 100vw;
+  height: 30vh;
+  
+
+  display: flex;
+  align-items: flex-end;
+}
+.main>div:nth-child(1){
+  width: 100vw;
+  height: 25vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main>div:nth-child(1) p{
+color: rgb(167, 167, 167);
+margin-left: 5px;
+}
+
+.main>div:nth-child(1)>div:nth-child(1) h2{
+color: rgb(255, 255, 255);
+
+}
+.main>div:nth-child(1)>div:nth-child(1)>div:nth-child(2){
+  width: 80vw;
+  height: 4vh;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.main>div:nth-child(1)>div:nth-child(2) h3{
+color: rgb(255, 255, 255);
+}
+.main>div:nth-child(1)>div:nth-child(2)>div:nth-child(2){
+  width: 80vw;
+  height: 4vh;
+  background-color: rgb(255, 255, 255);
+
+  display: flex;
+  align-items: center;
+}
+.main>div:nth-child(1)>div:nth-child(2)>p{
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.signin{
+  width: 100vw;
+  height: 10vh;
+  
+}
+
+.signin>div{
+  width: 60vw;
+  height: 6vh;
+  background-color: rgb(46, 46, 124);
+  border-radius: 20px;
+}
+.signin>div h4{
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="header flex-center">
+      <h1>GREEN</h1>
+    </div>
+    <!-- logo -->
+
+    <div class="main flex-center">
+      <div>
+          <div>
+            <h2>ID</h2>
+            <div>
+              <p>please type to sting</p>
+            </div>
+          </div>
+          <div>
+            <h3>PASSWORD</h3>
+            <div>
+              <p>please type to sting and number</p>
+            </div>
+            <p>Can not acess your account?</p>
+          </div>
+      </div>
+      
+ 
+
+    </div>
+
+    <div class="signin flex-center">
+      <div class="flex-center">
+        <h4>Sign in</h4>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+</html>
