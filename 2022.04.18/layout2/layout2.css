@@ -1,0 +1,212 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: rgb(221, 221, 221);
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(어바웃2.jpg);
+  background-size: cover;
+}
+#root > div:nth-child(1) {
+  width: 100vw;
+  height: 10vh;
+  -webkit-backdrop-filter: blur(20px) brightness(60%);
+          backdrop-filter: blur(20px) brightness(60%);
+  display: flex;
+}
+#root > div:nth-child(1) > div:nth-child(1) {
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+  width: 3vw;
+  height: 3vw;
+  background-color: #fff;
+}
+#root > div:nth-child(1) > div:nth-child(2) {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#root > div:nth-child(1) > div:nth-child(2) > ul {
+  width: 35vw;
+  height: 10vh;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+#root > div:nth-child(1) > div:nth-child(2) > ul > li {
+  width: 5vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root > div:nth-child(2) {
+  width: 100vw;
+  height: 60vh;
+  background-image: url(어바웃1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#root > div:nth-child(2) > div:nth-child(1) {
+  width: 20vw;
+  height: 60vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+}
+#root > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+  width: 0.1vw;
+  height: 55vh;
+  background-color: #fff;
+}
+#root > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+  width: 0.5vw;
+  height: 0.5vw;
+  border-radius: 50%;
+  background-color: var(--color-1);
+  margin-left: 5px;
+}
+#root > div:nth-child(2) > div:nth-child(2) {
+  width: 60vw;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+#root > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  width: 30vw;
+  height: 50vh;
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  -webkit-backdrop-filter: blur(20px) brightness(30%);
+          backdrop-filter: blur(20px) brightness(30%);
+}
+#root > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > h1 {
+  width: 23vw;
+  height: 2vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#root > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > p {
+  width: 23vw;
+  height: 20vh;
+  font-size: 0.8rem;
+  text-align: justify;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#root > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  width: 10vw;
+  height: 50vh;
+  -webkit-backdrop-filter: blur(20px) brightness(60%);
+          backdrop-filter: blur(20px) brightness(60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  width: 5vw;
+  height: 10vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#root > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div {
+  width: 0.7vw;
+  height: 0.7vw;
+  background-color: #fff;
+}
+#root > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
+  width: 10vw;
+  height: 50vh;
+  -webkit-backdrop-filter: blur(10px) brightness(80%);
+          backdrop-filter: blur(10px) brightness(80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root > div:nth-child(3) {
+  width: 100vw;
+  height: 30vh;
+  background-color: rgb(22, 22, 77);
+  z-index: 1;
+  color: var(--color-1);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+#root > div:nth-child(3) > div:nth-child(1) {
+  width: 28vw;
+  height: 43vh;
+  background-image: url(어바웃2.jpg);
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+  left: 7vw;
+  top: 50vh;
+}
+#root > div:nth-child(3) > div:nth-child(2) {
+  width: 60vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+#root > div:nth-child(3) > div:nth-child(2) > h2 {
+  width: 50vw;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#root > div:nth-child(3) > div:nth-child(2) > p {
+  width: 50vw;
+  height: 10vh;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: justify;
+}
+#root > div:nth-child(3) > div:nth-child(3) {
+  width: 100vw;
+  height: 5vh;
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root > div:nth-child(3) > div:nth-child(3) > p {
+  width: 80vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}/*# sourceMappingURL=layout2.css.map */
