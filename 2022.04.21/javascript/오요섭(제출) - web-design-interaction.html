@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+
+    
+  </div>
+
+  <script>
+    /* 
+    ? 도전해보기 ★★★★★★★★★★★★★★★★★★★★★★★★
+    TODO: 아래의 자바스크립트 명령에 대한 의도를 유추 하시오.
+    */
+    document.body.style.padding = "0";
+    // 전체 body의 padding값을 0으로 설정한다
+    document.body.style.margin = "0";
+    // 전체 body의 marign값을 0으로 설정한다
+    const root = document.getElementById("root");
+    // body 안에 있는 id =root을 Id 값으로 불러와 설정한다
+    let widthValue = 100;
+    // widhtValue 라는 변수의 값을 100으로 설정
+    let heightValue = 100;
+    // heightValue라는 변수의 값을 100으로 설정
+    root.style.width = `${widthValue}vw`;
+    // root의 style 디렉토리의 width요소를 widthValue의 값과 그 뒤에 "vw"라는 문자열을 합친 값으로 설정한다.
+    root.style.height = `${heightValue}vh`;
+    // root의 style 디렉토리의 height요소를 heightValue의 값과 그 뒤에 "vh"라는 문자열을 합친 값으로 설정한다.
+    root.style.backgroundColor = "darkblue";
+    // // root의 style 디렉토리의 background요소를 문자열 "darkblue"로 설정한다.
+    let backgroundColorArray = ["#ff0000", "#333333"];
+    // 변수 backgoundColorArray의 값을 배열 "#ff0000", "#333333" 로 설정한다.
+    let setSwitch = 0;
+    // 변수 setSwitch의 값을 0으로 설정한다.
+    root.addEventListener("click", function() {
+      // root을 클릭했을 때 이벤트가 발생하는데 그 이벤트가 어떤 이벤트냐 하면 function에서 계속 ->
+      if(setSwitch === 0) {
+        // 만약에 setSwitch 의 값이 0이면
+        root.style.backgroundColor = backgroundColorArray[1];
+        // root 의 style요소의 backgroundColor 의 값으로 위에 backgroundColorArray 변수의 배열안에 있는 1번 색(값)으로 설정하고
+        setSwitch = 1;
+        // setSwitch의 값을 1로 설정해라
+      } else {
+        // 만약에 setSwitch 의 값이 0이 아니면
+        root.style.backgroundColor = backgroundColorArray[0];
+        // root 의 style요소의 backgroundColor 의 값으로 위에 backgroundColorArray 변수의 배열안에 있는 0번 색(값)으로 설정하고
+        setSwitch = 0;
+        // setSwitch의 값을 0으로 설정해라
+      }
+
+    });
+
+
+
+
+    
+
+
+  </script>
+</body>
+</html>

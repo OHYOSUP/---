@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div></div>
+  </div>
+
+  <script>
+    const root = document.getElementById("root");
+    console.dir(root);
+    console.log(root.children);
+    console.log(root.children[0]);
+    console.dir(root.children[0]);
+
+    // root.children[0].textContent = textArray[1];
+    // 이거 어차피 문자열 꾸러미인데 그냥 한번에 ㅂ녀수에다가 저장하면 안되나?
+
+    const textArray = ["안녕하세요 행복한 금요일 입니다", "내일은 토요일이여" ,"모레는 일요일이여", "글피는 월요일이여", "화요일은 화장품사러가야지"];
+
+    document.body.style.width = "100vw";
+    document.body.style.height = "100vh";
+    document.body.style.backgroundColor = "salmon";
+
+    //알고리즘 구상 - 문서를 클릴할 때 마다 텍스트가 바뀌었으면 좋겠다
+    // 1. 텍스트 목로깅 필요할 것같다.
+    // 2. 목록은 배열을 순서대로 쓴다던데?
+    // 3. 순서는 숫자니까 더하기 1만 하면 되겠다
+    // 4. 숫자는 어떻게 덧셈시키지? 
+    // 5. 숫자 변수 하나 만들어주면 되겠다
+
+
+
+    let indexValue = 0;
+    document.body.addEventListener('wheel', function() {
+      if(root.children[0].textContent === "") {
+        root.children[0].textContent = textArray[0];
+      } else{
+        indexValue++;
+        // 숫자 1을 증가시켜준 다음 
+        console.log(indexValue);
+        root.children[0].textContent = textArray[indexValue];
+      }
+      if(indexValue === textArray.length) {
+        indexValue = 0;
+      }
+    });
+
+
+
+      // root.children[0].textContent = textArray[1];
+
+      // 문서의 body부분을 클릭하면 두번째 인수로 설정된 함수 내용을 실행시켜라
+      // root에 있는 자식중에 0번이 있을 것. 거기에 text node키의 변수문자열을 재 할당해라
+
+    
+
+  </script>
+</body>
+</html>

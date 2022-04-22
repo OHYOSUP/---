@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="root">
+    <div class="child"></div>
+  </div>
+
+  <script>
+    const root = document.querySelector('.root');
+    root.style.width = 100 + "vw";
+    root.style.height = 100 + "vw";
+    root.style.display = "flex";
+    root.style.justifyContent = "center";
+    root.style.alignItems = "center";
+
+    console.log(root);
+    console.dir(root);
+
+    const div = document.querySelectorAll('.root.child');
+    root.style.width = 30 + "vw";
+    root.style.height = 30 + "vw";
+    root.style.borderRadius = 50 + "%";
+    root.style.backgroundColor = "darkgray";
+
+    console.log(div);
+    console.dir(div);
+    // root의 자식 div을 선택하는 선택자는 어떻게 하는걸까?
+
+  </script>
+</body>
+</html>
