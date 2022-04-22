@@ -16,9 +16,3 @@ let timer = setInterval(function() {
   }
 }, 1000)
 
-// console.log(arr[0]);
-// console.log(arr[1]);
-// console.log(arr[2]);
-// console.log(arr[3]);
-// console.log(arr[4]);
-// console.log(arr[arr.length]);
