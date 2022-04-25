@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+<script>
+const root = document.getElementById("root");
+const container = root.children[0];
+const one = container.children[0];
+const two = container.children[1];
+const three = container.children[2];
+
+console.log(root);
+console.dir(root);
+
+root.style.width = "100vw";
+root.style.height = "100vh";
+root.style.display = "flex";
+root.style.justifyContent = "center";
+root.style.alignItems = "center";
+root.style.backgroundColor = "#c4c4c4"
+
+container.style.width = "50vw";
+container.style.height = "40vw";
+container.style.backgroundColor = "#333";
+container.style.display = "flex";
+container.style.justifyContent = "space-around";
+container.style.alignItems = "center";
+container.style.backgroundColor = "#c4c4c4"
+
+one.style.width = "200px";
+one.style.height = "200px";
+one.style.backgroundColor = "#fff"
+
+two.style.width = "200px";
+two.style.height = "200px";
+two.style.backgroundColor = "#fff"
+
+three.style.width = "200px";
+three.style.height = "200px";
+three.style.backgroundColor = "#fff"
+
+container.addEventListener('click', function() {
+container.style.flexDirection = "column";
+
+});
+
+</script> 
+</body>
+</html>
