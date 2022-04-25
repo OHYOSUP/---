@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div id="element"></div>
+    <div id = "container">
+      <div id="text">
+        <h1>lorem title</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repudiandae ut eaque at dolorem quaerat voluptas voluptatum similique quas expedita delectus, porro rem aliquam soluta a aliquid earum ullam voluptate, deleniti labore vitae veniam eius! Vitae qui fugiat non, blanditiis fuga tempore nobis. Laboriosam explicabo pariatur hic sed incidunt distinctio.</p>
+      </div>
+      <div id="container2">
+        <div id="thum"></div>
+        <div id="thum"></div>
+        <div id="thum"></div>
+      </div>
+    </div>
+  </div>
+
+
+<script>
+const root = document.getElementById("root");
+const element = document.getElementById("element");
+const container = document.getElementById("container");
+const text = document.getElementById("text");
+const container2 = document.getElementById("container2");
+const thum1 = container2.children[0];
+const thum2 = container2.children[1];
+const thum3 = container2.children[2];
+
+
+
+root.style.width = "100vw";
+root.style.height = "100vh";
+root.style.display = "flex";
+root.style.alignItems = "flex-end"
+
+element.style.width = "25vw";
+element.style.height = "25vw";
+element.style.backgroundColor = "salmon";
+
+container.style.width = "75vw";
+container.style.height = "100vh";
+container.style.display = "flex";
+container.style.flexDirection = "column";
+container.style.justifyContent = "center";
+container.style.alignItems = "center";
+
+text.style.width= "50vw";
+text.style.height= "60vh";
+text.style.display = "flex";
+text.style.flexDirection = "column";
+text.style.justifyContent = "flex-end";
+
+container2.style.width = "75vw"
+container2.style.height = "40vh"
+container2.style.display = "flex"
+container2.style.justifyContent = "space-around"
+container2.style.alignItems = "flex-end"
+
+
+thum1.style.width = "8vw"
+thum1.style.height = "8vw"
+thum1.style.backgroundColor = "salmon"
+
+thum2.style.width = "8vw"
+thum2.style.height = "8vw"
+thum2.style.backgroundColor = "salmon"
+
+thum3.style.width = "8vw"
+thum3.style.height = "8vw"
+thum3.style.backgroundColor = "salmon"
+</script>
+</body>
+</html>
