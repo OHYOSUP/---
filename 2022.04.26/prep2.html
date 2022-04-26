@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <button>click</button>
+  </div>
+
+
+  <script>
+    const root = document.getElementById("root");
+    const clickBtn = root.children[0];
+    // = const test = document.querySelector('#root > button');
+
+
+    // console.dir(root);
+    // console.log(clickBtn);
+
+    let bgColorValue = 333;
+    let bgSize = 20;
+
+    root.style.width = bgSize + "vw";
+    root.style.height = bgSize + "vh";
+    root.style.backgroundColor = `#${bgColorValue}`;
+    root.style.transition = "0.5s";
+
+    let data = true;
+    // root.addEventListener("wheel", function() {
+    //   // console.log('hello');
+    //   // console.log(root.style.backgroundColor);
+    //   // root.style.display = "flex"
+    //   // root.style.justifyContent = "center"
+    //   // root.style.alignItems = "center"
+    //   // root.style.backgroundColor = "salmon";
+    // });
+
+
+
+// let bggg = 100;
+// bggg++;
+// console.log(bggg); // 101
+// bggg = bggg + 10;
+// console.log(bggg); // 111
+// bggg += 10;
+
+
+    //   if(){
+        
+    //     console.log('data 값은 : ' + data);
+    //     data = false;
+    //     root.style.width = bgSize ++ + "vw";
+    //     root.style.height =  bgSize ++ + "vh";
+    //     clickBtn.textContent = "day";
+    //   } else { // else data !== true, data === false
+    //     console.log("지금 else로 data값은 : " + data);
+    //     data = true;
+    //     root.style.backgroundColor = "darkblue";
+    //     root.style.width =  bgSize ++ + "vw";
+    //     root.style.height =  bgSize ++ + "vh";
+    //     root.style.transition = "0.5s";
+    //     clickBtn.textContent = "night";
+    //   }
+    // });
+
+// root.addEventListener("wheel", function(event){
+//   console.dir(event);
+//   console.log(event.deltaY);
+
+//   if(WheelEvent > 0) {
+//     root.style.backgroundColor = "salmon";
+//     root.style.width = bgSize ++ + "vw";
+//     root.style.height =  bgSize ++ + "vh";
+//     clickBtn.textContent = "day";
+//   } 
+// });
+
+
+
+
+  </script>
+</body>
+</html>
