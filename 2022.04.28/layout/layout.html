@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding-top: 0;}
+    /* 이 부분도 자바스크립트로 제어할 수 있는지(물론 가능할 것 같습니다만)
+    어떻게 하는지 궁금합니다 */
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div></div>
+    <div></div>
+  </div>
+
+  <script>
+    const container = document.getElementById("container");
+    const box1 = container.children[0];
+    const box2 = container.children[1];
+
+    let rootsize = 60;
+    let boxsize = 30;
+    container.style.width = rootsize + "vw";
+    container.style.height = rootsize + "vw";
+    container.style.display= "flex";
+    container.style.justifyContent = "center";
+    container.style.alignContent = "center";
+    container.style.backgroundColor = "#c4c4c4"
+    // border 1px solid black 으로 하려고 border 1px, borderColor값을 줬는데
+    // 변화가 없다. 왜그럴까. 일단 backgroundColor로 구분하자
+
+    console.log(container);
+    console.dir(container.style);
+
+    box1.style.width = boxsize + "vw";
+    box1.style.height = boxsize + "vw";
+    box1.style.backgroundColor = "lightblue";
+    box1.style.position = "absolute";
+    box1.style.zIndex = "2";
+    box1.style.left = "20vw";
+    box1.style.top = "25vh";
+    console.dir(box1);
+
+    box2.style.width = boxsize + "vw";
+    box2.style.height = boxsize + "vw";
+    box2.style.backgroundColor = "darkgreen";
+    box2.style.position = "absolute";
+    box2.style.zIndex = "1";
+    box2.style.left = "2vw";
+    box2.style.top = "10vh";
+    console.dir(box2.style);
+
+    box1.addEventListener("click",function(){
+    box1.style.top = 0;
+    box1.style.transitionDuration = "1s";
+    
+      
+    });
+    //  이 두개의 addEventListener를 합칠 수 없을까?
+    box2.addEventListener("click",function(){
+    box2.style.top = 0;
+    box2.style.transitionDuration = "1s"  ;
+    });
+  </script>
+</body>
+</html>

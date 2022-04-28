@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<div id="root">
+  <button id="clickBtn">click</button>
+  <div>grayBar</div>
+</div>
+
+
+<script>
+  const root = document.getElementById("root");
+  console.dir(root);
+
+  const grayBar = root.children[1];
+// root의 children으로 있는 div을 grayBar로 선언해준다
+console.dir(grayBar);
+
+const clickBtn = document.getElementById("clickBtn");
+
+
+
+
+
+clickBtn.addEventListener("click", function(){
+// console.log("test");
+
+let value = 1;
+for(let i = 0; i < value; i++) {
+
+let makeSection = document.createElement("section");
+makeSection.innerHTML = "hello" + i;
+grayBar.appendChild(makeSection);
+}
+
+});
+
+grayBar.innerHTML = "<section>hello</section>";
+// console.log(i);
+
+let sectionString = "hello";
+
+
+let value = 0;
+for(let i = 0; i < value; i++) {
+
+  let makeSection = document.createElement("section");
+  grayBar.appendChild(makeSection);
+}
+
+
+</script>
+</body>
+</html>

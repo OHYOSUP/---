@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+
+    const root = document.getElementById("root");
+    const firstchild = document.createElement("div");
+
+    root.style.width = "100vw"
+    root.style.height = "100vh"
+    console.log(root);
+    console.dir(root.style);
+
+    firstchild.style.width = "10vw";
+    firstchild.style.height = "10vh";
+    firstchild.style.backgroundColor = "salmon";
+    console.log(firstchild);
+    console.dir(firstchild.style);
+
+
+  </script>
+</body>
+</html>

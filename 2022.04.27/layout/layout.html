@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="layout.css"> -->
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div id = "container">
+      <div id = "box"></div>
+    </div>
+    <!-- 막대기 -->
+    <div></div>
+    <!-- 원 -->
+  </div>
+
+
+  <script>
+    const root = document.getElementById("root");
+
+    let size = 100;
+
+    root.style.width = size + "vw"
+    root.style.height = size + "vh"
+    root.style.backgroundColor = "#777"
+
+    root.style.display = "flex"
+    root.style.justifyContent = "center"
+    root.style.alignContent = "center"
+    
+    // console.log(root);
+    // console.dir(root);
+
+    const container = document.getElementById("container");
+
+    container.style.display = "flex"
+    container.style.justifyContent = "space-around"
+    container.style.alignContent = "center"
+    container.style.width = 80 + "vw"
+    container.style.height = 80 + "vh"
+
+    let boxwidth = 50;
+    let boxheight = 700;
+
+    // 하나의 div을 만들어서 for로 반복시키는게 좋을듯
+
+    const box = document.getElementById("box");
+
+    box.style.width = boxwidth + "px"
+    box.style.height = boxheight + "px"
+    box.style.backgroundColor = "#fff";
+      
+    // 한개의 박스를 선언해 준다
+
+    console.log(box);
+    console.dir(box);
+
+    // 잘 돌아가는 듯 하다
+
+    for (let i = 0; i < 10; i++) {
+
+      console.log(box);
+      // console.dir(box);
+      
+    let i = box
+
+    i.style.width = boxwidth + "px"
+    i.style.height = boxheight + "px"
+    i.style.backgroundColor = "#fff";
+    i.style.width = boxwidth + "px"
+    i.style.height = boxheight + "px"
+    
+    }
+
+    // 콘솔에 찍히는 건 잘 되는 것 같은데 왜 div이 구현이 안될까
+  </script>
+</body>
+</html>
