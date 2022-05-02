@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+
+
+  <script>
+    const root = document.getElementById("root");
+    let innerValue = "나는 지금 코딩하고 있다";
+
+    root.textContent = innerValue;
+
+
+    let current = 0;
+
+    // root.addEventListener("click", function(){
+    //   console.log(current === 1);
+    //   if(current === 1){
+    //     console.log("야호");
+    //     current = 0;
+
+    //     root.style.color = "red"
+    //   } else {
+    //     console.log('쭈굴쭈굴');
+    //     current =1;
+
+    //     root.style.color = "#000"
+    //   }
+    // });
+
+      root.addEventListener("click", function(){
+        console.log(current === 1);
+        if( current ===1){
+          console.log("hello");
+          current = 0;
+          root.style.color = "red";
+        } else{
+          console.log("bye");
+          current= 1;
+
+          root.style.color = "blue";
+        }
+
+
+      });
+
+
+
+
+  </script>
+</body>
+</html>

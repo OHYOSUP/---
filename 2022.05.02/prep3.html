@@ -1,0 +1,58 @@
+@@ -0,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script>
+    const root = document.getElementById("root");
+    // 문서에서 root이라는 이름의 아이디를 가진 놈을 root이라는 이름으로 불러온다
+    root.style.fontSize = "5rem";
+    // root의 폰트 사이즈를 5rem으로 설정한다
+    let isStatus = true;
+    //  isStatus 라는 변수의 값을 true로 설정한다
+    let current = 0;
+    //  current 라는 변수의 값을 0으로 설정한다
+    root.textContent = current;
+    //  root의 텍스트내용을 변수 current의 값으로 설정한다
+    root.addEventListener('click', function () {
+      // root에다가 click하면 발생하는 이벤트를 줄거야
+      if (isStatus === true) {
+        // 만약에 isStatus값이 true면
+        current++;
+        // current변수의 값을 1씩 올려줘
+        if (current >= 10) {
+          // 만약에 current변수의 값이 10보다 같거나 크면
+          isStatus = false;
+          //  isStatus변수의 값을 false로 해줘
+        }
+        // 
+        root.textContent = current;
+        // root의 텍스트 내용은 변수 current로 할거야
+      } else {
+        // 그 외에는
+        current--;
+        // current변수의 값을 1씩 뺄거야
+        if (current <= 0) {
+          // 만약에 current변수의 값이 0보다 작거나 같으면
+          isStatus = true;
+          // isStatus의 값을 true로 할거야
+        }
+        // 
+        root.textContent = current;
+        // root의 텍스트컨텐트 값은 변수 current로 할거야
+      }
+    })
+  </script>
+
+</body>
+
+</html> 

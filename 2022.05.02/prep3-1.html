@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div></div>
+  </div>
+
+  <script>
+const root = document.getElementById("root");
+const div = root.children[0];
+
+
+let lab = true;
+let value = 0;
+
+div.style.width  = "20vw";
+div.style.height = "10vh";
+div.style.backgroundColor = "black"
+
+div.addEventListener("click", function(){
+  if(lab === true){
+    value++;
+    if(value >= 1){
+      lab = false;
+    }
+    div.style.backgroundColor = "red";
+    console.log(value);
+  } else{
+    value--;
+    if(value <= 0){
+      lab = true;
+    }
+    div.style.backgroundColor = "blue";
+    console.log(value);
+  }
+
+});
+
+
+// root.addEventListener("click",function(){
+//   if(lab === true) {
+//     value++;
+//     if(value >= 10 ){
+//       lab = false;
+//     }
+//     root.textContent = value;
+//   } 
+//   else{
+//     value--;
+//     if(value <= 0){
+//       lab = true;
+//     }
+//     root.textContent = value;
+//   }
+// });
+
+
+
+
+
+
+  </script>
+</body>
+</html>
