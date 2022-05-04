@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="a">똑딱이</button>
+  <button id="b">그만</button>
+  <script>
+
+const body = document.querySelector('body');
+const a = document.getElementById("a");
+const b = document.getElementById("b");
+
+let second = 0;
+
+
+
+a.addEventListener("click",function(){
+  let ddok = setInterval(function(){  
+  
+  if(second === 0){
+    // 값이 트루면
+    console.log("똑");
+    // 똑을 쓰고
+    second++;
+// 세컨드는 플러스1
+
+
+  if(second === 1){
+    // 만약에 세컨드가 0보다 크면
+    
+    
+    console.log("딱");
+    // 그리고 딱을 써라
+    second--;
+    // 세컨드값은 1 빼
+  } 
+}},1000)
+
+  b.addEventListener("click", function(){
+clearInterval(ddok);
+});
+
+});
+
+
+
+// let even = 어떤값 %2 === 0;
+// 나머지 
+
+
+
+  </script>
+</body>
+</html>

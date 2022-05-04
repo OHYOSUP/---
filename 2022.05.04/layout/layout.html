@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="layout.css"> -->
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div id="first">
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+      <!-- first -->
+    <div id="second">
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum consequuntur assumenda quas eligendi officiis quasi facere itaque repellendus numquam vel ducimus temporibus sit ea in dignissimos maxime reiciendis, labore quaerat.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum consequuntur assumenda quas eligendi officiis quasi facere itaque repellendus numquam vel ducimus temporibus sit ea in dignissimos maxime reiciendis, labore quaerat.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum consequuntur assumenda quas eligendi officiis quasi facere itaque repellendus numquam vel ducimus temporibus sit ea in dignissimos maxime reiciendis, labore quaerat.</p>
+      </div>
+    </div>
+    <!-- second -->
+    <div id="third">
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dignissimos, quia corporis culpa ea eos corrupti, atque porro impedit officiis pariatur maiores alias consectetur eaque fugiat mollitia praesentium? Rem, laudantium molestias maiores aut est nam veniam facilis qui velit aspernatur dolorem hic doloremque ut labore repudiandae. Libero vel iste alias vero dolorum! Sunt quos reprehenderit qui veniam libero veritatis temporibus atque totam ex, iusto omnis aliquid, repellat at. Voluptatem, labore? Sit cum natus ipsam delectus facere tenetur, cumque cupiditate nam!</p>
+      </div>
+    </div>
+    <!-- third -->
+    <div id="forth">
+      <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi nostrum ex dolorum tenetur tempore omnis impedit, perspiciatis temporibus! Quae, nam. Dolore, expedita tempora facilis error vero atque! Rem architecto sit dolorem dignissimos officiis voluptate aut aliquid tenetur excepturi saepe! Vitae quasi quaerat illum. Laudantium vitae dolorum non dolor. Iure, nobis veniam enim quos officiis mollitia officia voluptatem, non explicabo distinctio, nam adipisci esse commodi nemo at minus corporis. Maxime excepturi est fugit error quaerat quo accusamus odit non inventore ullam?</p>
+      </div>
+    </div>
+    <!-- forth  -->
+
+    <div>
+      <h1>BIGFONT</h1>
+    </div>
+    <div></div>
+    <!-- logo -->
+  </div>
+
+
+  <script>
+    const root = document.getElementById("root");
+    const first = document.getElementById("first");
+    const one = first.firstChild;
+
+    const second = document.getElementById("second");
+    const third = document.getElementById("third");
+    const forth = document.getElementById("forth");
+
+
+
+
+    root.style.width = "100vw";
+    root.style.height = "100vh";
+    root.style.display = "flex";
+
+    first.style.width = "7vw";
+    first.style.heigth = "100vh";
+    first.style.backgroundColor = "#c4c4c4";
+
+    one.style.width = "7vw";
+    one.style.height = "70vw";
+    one.style.display = "flex";
+    one.style.justifyContent = "space-around";
+    one.style.alignItems = "center";
+
+
+    second.style.width = "30vw";
+    second.style.height = "100vh";
+    second.style.backgroundColor = "#999999";
+    second.style.display = "flex";
+    second.style.justifyContent = "center";
+  </script>
+</body>
+</html>

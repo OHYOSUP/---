@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+#root #first {
+  width: 7vw;
+  height: 100vh;
+  background-color: #c4c4c4;
+}
+#root #first > div:nth-child(1) {
+  width: 7vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#root #first > div:nth-child(1) > div {
+  width: 4vw;
+  height: 4vw;
+  background-color: #777;
+}
+#root #second {
+  width: 30vw;
+  height: 100vh;
+  background-color: #999999;
+  display: flex;
+  justify-content: center;
+}
+#root #second > div:nth-child(1) {
+  width: 25vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #third {
+  width: 30vw;
+  height: 100vh;
+  background-color: rgb(139, 139, 139);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#root #third > div:nth-child(1) {
+  width: 25vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #forth {
+  width: 37vw;
+  height: 100vh;
+  background-color: #4d4d4d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #forth > div:nth-child(1) {
+  width: 26vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root > :nth-child(5) {
+  width: 50vw;
+  height: 60vh;
+  background-color: black;
+  position: absolute;
+  left: 25vw;
+  top: 25vh;
+  z-index: 2;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 75%;
+  border-bottom-left-radius: 35%;
+  transform: rotate(45deg);
+  opacity: 0.6;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root > :nth-child(5) > h1 {
+  font-size: 6rem;
+  transform: rotate(-45deg);
+}
+#root > :nth-child(6) {
+  width: 50vw;
+  height: 60vh;
+  background-color: black;
+  position: absolute;
+  left: 20vw;
+  top: 34vh;
+  z-index: 1;
+  opacity: 0.5;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 75%;
+  border-bottom-left-radius: 35%;
+  transform: rotate(45deg);
+  filter: blur(20px);
+}/*# sourceMappingURL=layout.css.map */
