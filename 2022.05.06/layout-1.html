@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+    #root{
+      width: 100vw;
+      height: 100vh;
+      background-color: #ccc;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #root>div{
+      width: 300px;
+      height: 300px;
+      border: 1px solid blue;
+      position: relative;
+    }
+
+    #root>div>section{
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+
+      position: absolute;
+    }
+
+    #root>div>section:nth-child(1){
+      width: 20vw;
+      height: 50vh;
+      
+      top:0px; left:0px;
+      background-color: #123;
+      
+      z-index: 3;
+      
+    }
+    #root>div>section:nth-child(2){
+      top:30px; left:30px;
+      background-color: #456;
+      z-index: 2;
+    }
+    #root>div>section:nth-child(3){
+      top:50px; left:50px;
+      background-color: #789;
+      z-index: 1;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div>
+      <section>
+        <button id="close-button">close</button>
+        <div>
+          <h1>Lorem Ipsum</h1>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae a laboriosam animi ratione! Similique assumenda fugiat laudantium ratione hic dolor sint optio iusto sit autem. In non saepe a quia. Alias, quibusdam provident, dolorum assumenda ducimus perferendis doloribus neque labore corporis odit molestias? Quis nostrum officiis magni itaque quas nobis.</p>
+        </div>
+      </section>
+      <section>2</section>
+      <section>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa libero minus molestias explicabo rerum sunt reiciendis maiores, cum dolorum numquam odit, doloremque dolorem, dignissimos iure at enim necessitatibus quia nesciunt. Vel voluptas hic alias aspernatur facere esse aperiam fugiat ex cupiditate quas sapiente perspiciatis repudiandae corrupti accusamus officia iusto, recusandae et, odio nemo odit tenetur! Impedit, doloremque? Ea a repellat, possimus, sed molestias ut deleniti aperiam sequi provident non harum!</p>
+      </section>
+    </div>
+  </div>
+
+
+    <script>
+      const root = document.getElementById("root");
+      console.log(root);
+      console.dir(root);
+
+      const sections = root.children[0].children;
+      console.log(sections);
+
+      const clickBtn = document.getElementById('close-button');
+      console.log(clickBtn);
+
+      clickBtn.addEventListener('click', function(){
+        sections[0].style.display = "none"
+        sections[1].style.display = "none"
+      });
+
+
+
+    </script>
+</body>
+</html>

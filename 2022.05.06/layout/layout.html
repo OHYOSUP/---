@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="layout.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div id="popup">
+    </div>
+
+      <div id="popup2">
+        <div>
+          <button id="x"></button>
+        </div>
+        <div>
+          <h1>LOREM IPSUM</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nam veniam numquam accusamus aperiam, pariatur deleniti nesciunt at. Ratione amet rem nesciunt sit corporis exercitationem porro quidem earum distinctio culpa beatae dolorum voluptas, officia, ipsum id impedit accusamus. Inventore fuga recusandae rerum mollitia voluptate earum, suscipit ullam. A, facere quisquam!</p>
+        </div>
+        <div>
+          <button id="close">close</button>
+        </div>
+      </div>
+    
+    <!-- textbox -->
+    <div id="shadow"></div>
+    <!-- shadow -->
+    <div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima delectus dolorem ea, fugit vero minus quo optio asperiores quam aliquam deserunt ratione officiis placeat dignissimos vel, adipisci labore debitis dolore ab commodi eaque. Pariatur atque cupiditate perspiciatis aliquam sit minus eius consequatur non ab. Molestiae dolore a amet, sint natus libero facilis modi? Aliquid sint doloremque, sequi veritatis laborum maiores. Consequuntur, neque doloribus? Cum, et quia dicta eum quaerat est cumque a quasi consectetur harum repellat rerum provident doloremque maxime facilis voluptates, repudiandae quae? Odio aperiam officia minus facere aut facilis, corporis animi maiores. Veritatis soluta temporibus magni ipsum beatae.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima delectus dolorem ea, fugit vero minus quo optio.</p>
+    </div>
+  </div>
+
+  <script>
+    const root = document.getElementById("root");
+    const x = document.getElementById("x");
+    const close = document.getElementById("close");
+    const popup = document.getElementById("popup");
+    const shadow = document.getElementById('shadow');
+    const popup2 = document.getElementById('popup2');
+
+x.addEventListener('click', function(){
+  popup.style.display = "none";
+  popup2.style.display = "none";
+  shadow.style.display = "none";
+
+
+});
+
+
+  </script>
+</body>
+</html>

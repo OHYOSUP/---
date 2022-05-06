@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #popup {
+  width: 22vw;
+  height: 60vh;
+  border: 1px solid #c4c4c4;
+  background-color: #f3f3f3;
+  opacity: 0.8;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 30vw;
+  top: 17vh;
+  z-index: 3;
+}
+#root #popup2 {
+  width: 22vw;
+  height: 70vh;
+  position: absolute;
+  z-index: 4;
+  left: 31vw;
+  top: 17vh;
+}
+#root #popup2 > div:nth-child(1) {
+  width: 20vw;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#root #popup2 > div:nth-child(1) #x {
+  width: 1.5vw;
+  height: 1.5vw;
+}
+#root #popup2 > div:nth-child(2) {
+  width: 22vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 2.2rem;
+}
+#root #popup2 > div:nth-child(2) > h1 {
+  width: 22vw;
+  height: 24vh;
+  margin-left: 15px;
+}
+#root #popup2 > div:nth-child(2) > p {
+  font-size: 1rem;
+  width: 20vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+#root #popup2 > div:nth-child(3) {
+  width: 18vw;
+  height: 4vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#root > div:nth-child(3) {
+  width: 22vw;
+  height: 60vh;
+  background-color: #e0e0e0;
+  filter: blur(20px);
+  position: absolute;
+  left: 33vw;
+  top: 23vh;
+  z-index: 1;
+}
+#root > div:nth-child(4) {
+  width: 22vw;
+  height: 60vh;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=layout.css.map */

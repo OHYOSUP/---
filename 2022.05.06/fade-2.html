@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+  </style>
+
+</head>
+<body>
+  <div id="root">
+    <div id="navi">
+      <div></div>
+      <div></div>
+    </div>
+    <div id="slide">
+    </div>
+    <div id="sections">
+      <section>item-1</section>
+      <section>item-2</section>
+      <section>item-3</section>
+      <section>item-4</section>
+    </div>
+  </div>
+
+
+  <script>
+    const root = document.getElementById('root');
+    
+
+    let widthValue = 0;
+    let heightValue = 0;
+
+    root.style.width =  widthValue + "vw";
+    root.style.height = "100vh"
+    root.style.backgroundColor = "#777"
+    
+
+    const slide = document.getElementById('slide');
+    const nav = document.getElementById('navi');
+    const bar1 = nav.children[0];
+    const bar2 = nav.children[1];
+    const sections = document.getElementById('sections');
+    const section1 = sections.children[0];
+    const section2 = sections.children[1];
+    const section3 = sections.children[2];
+    const section4 = sections.children[3];
+
+    console.log(sections);
+    
+    sections.style.width = "40vw"
+    sections.style.height = "70vh"
+
+    section1.style.width = "37vw"
+    section1.style.heigth = "10vh"
+    section1.style.backgroundColor = "#c4c4c4"
+    section2.style.width = "37vw"
+    section2.style.heigth = "10vh"
+    section2.style.backgroundColor = "#c4c4c4"
+    section3.style.width = "37vw"
+    section3.style.heigth = "10vh"
+    section3.style.backgroundColor = "#c4c4c4"
+    section4.style.width = "37vw"
+    section4.style.heigth = "10vh"
+    section4.style.backgroundColor = "#c4c4c4"
+
+
+
+    nav.style.width = "4vw";
+    nav.style.heigth = "4vh";
+    nav.style.display = "flex";
+    nav.style.justifyContent = "space-around";
+    nav.style.flexDirection = "column";
+    nav.style.alignItems = "center";
+
+    bar1.style.width = "3vw";
+    bar1.style.height = "1vh";
+    bar1.style.backgroundColor = "black";
+
+    bar2.style.width = "3vw";
+    bar2.style.height = "1vh";
+    bar2.style.backgroundColor = "black";
+
+    // console.dir(bar1.style);
+
+    
+
+    nav.style.width = "10vw";
+    nav.style.height = "5vh";
+
+    let isStatus = true;
+    let opacityValue = 0;
+
+
+    nav.addEventListener('click', function(){
+      bar1.style.backgroundColor = "red";
+      bar2.style.position = "absolute";
+      bar2.style.top = "2vh";
+      bar1.style.transform = "rotate(45deg)";
+      bar2.style.backgroundColor = "red";
+      bar2.style.transform = "rotate(-45deg)";
+
+
+      let menu = setInterval(function(){
+
+        if(isStatus === true){
+          widthValue = widthValue + 1;
+          root.style.width = widthValue + "vw";
+  
+          if(widthValue >=70){
+
+            isStatus = false;
+            clearInterval(menu);
+          }
+
+        } else{
+          if(isStatus === false){
+            widthValue = widthValue - 1;
+
+            root.style.width = widthValue + "vw";
+
+            bar1.style.backgroundColor = "black";
+            bar1.style.position = "static";
+            bar1.style.transform = "rotate(0deg)";
+            bar2.style.backgroundColor = "black";
+            bar2.style.position = "static";
+            bar2.style.transform = "rotate(0deg)";
+            if(widthValue <= 0 ){
+
+              isStatus = true;
+              clearInterval(menu);
+            }
+          }
+        }
+      });
+      }, 50);
+
+  </script>
+</body>
+</html>

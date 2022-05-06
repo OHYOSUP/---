@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+  </div>
+  <button id="click-button">click</button>
+
+  <script>
+    const root = document.getElementById('root');
+
+
+    let opacityValue = 0;
+    let widthValue = 0;
+    let heightValue = 0;
+    let isStatus = true;
+
+    
+    const clickBtn = document.getElementById('click-button');
+    
+    root.style.width = "100px"
+    root.style.height = "100px"
+    root.style.backgroundColor = "#333"
+    root.style.opacity = opacityValue;
+    
+
+
+    clickBtn.addEventListener('click', function(){
+
+      let timer = setInterval(function(){
+
+        if(isStatus === true){
+          opacityValue = opacityValue + 0.1;
+          widthValue = widthValue + 1;
+          heigthValue = heightValue + 1;
+
+          root.style.opacity = opacityValue;
+          root.style.width =  widthValue + 500 +"px";
+          root.style.height = heightValue + 500 + "px";
+  
+          console.log(widthValue);
+          // console.log(heigthValue);
+
+          if(opacityValue >= 1){
+            isStatus = false;
+            clearInterval(timer);
+          }
+          // console.log(opacityValue);
+        
+        } else{
+
+          if(isStatus === false){
+            opacityValue = opacityValue - 0.1;
+            root.style.opacity = opacityValue;
+            root.style.width =  widthValue - 500 +"px";
+            root.style.height = heightValue - 500 + "px";
+            console.log(widthValue);
+
+            if(opacityValue <= 0){
+              clearInterval(timer);
+              isStatus = true;
+            }
+          }
+        }
+      },20)
+    });
+
+  </script>
+</body>
+</html>
