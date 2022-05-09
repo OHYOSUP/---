@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div id="div"></div>
+  </div>
+  
+  <script>
+    const root = document.getElementById('root');
+    const box = document.getElementById('div');
+
+
+    root.style.width = "100vw";
+    root.style.height = "100vh";
+
+    box.style.width = "500px";
+    box.style.height = "500px";
+    box.style.backgroundColor = "black";
+
+
+    console.log(div);
+    
+    let boxValue = box.style;
+
+
+    if(root.clientWidth > 768){
+      boxValue.width = "500px";
+      boxValue.heigth = "500px";
+      boxValue.backgroundColor = "salmon";
+    } else if (root.clientWidth > 450) {
+      boxValue.width = "200px";
+      boxValue.height = "200px";
+      boxValue.backgroundColor = "red";
+    } else {
+      boxValue.width = "50px";
+      boxValue.height = "50px";
+      boxValue.backgroundColor = "blue";
+    }
+
+
+
+    // let bodyValue = document.body;
+
+
+    // console.log(bodyValue.clientWidth);
+    // let text = ["손만충", "장준형", "임성민"];
+
+    // if(bodyValue.clientWidth > 768){
+    //   bodyValue.style.backgroundColor = bgcColor[0];
+
+    // } else if(bodyValue.clientWidth < 450 ){
+    //   bodyValue.style.backgroundColor = bgcColor[1];
+    // } else {
+    //   bodyValue.style.backgroundColor = bgcColor[2];
+    // }
+
+    // if(bodyValue.clientWidth < 450){
+    //   bodyValue.textContent = text[0];
+    //   bodyValue.style.backgroundColor = "salmon"
+    //   bodyValue.style.transition = "1s"
+
+    // } else if(bodyValue.clientWidth > 768){
+    //   bodyValue.textContent = text[1];
+    //   bodyValue.style.backgroundColor = "lightblue"
+    //   bodyValue.style.transition = "1s"
+
+    // } else{
+    //   bodyValue.textContent = text[2];
+    //   bodyValue.style.backgroundColor = "green"
+    //   bodyValue.style.transition = "1s"
+    // }
+
+
+  </script>
+</body>
+</html>

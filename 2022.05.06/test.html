@@ -6,27 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    /* #root {
-      width:100px;
-      height:20px;
-      background-color: salmon;
-      transform: rotate(90deg);
-    } */
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+  
+    #root{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
 
   </style>
 </head>
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <div id="container">
+      <section>변요한</section>
+      <section>전여빈</section>
+      <section>엄태구</section>
+    </div>
+  </div>
 
 
   <script>
-    const root = document.querySelector('#root');
+    const root = document.getElementById('root');
+    const container = document.getElementById('container');
+    const sections = container.childNodes;
+    
+    console.log(container);
+    console.log(root);
 
-    root.style.width = "100px";
-    root.style.height = "20px";
-    root.style.backgroundColor ="salmon";
-    root.style.transform = "rotate(90deg)";
+    root.style.width = "100vw";
+    root.style.height = "100vh";
+    container.style.width = "70vw"
+    container.style.height = "60vh"
+    container.style.backgroundColor = "#c4c4c4";
 
   </script>
 </body>

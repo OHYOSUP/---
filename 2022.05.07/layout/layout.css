@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #container {
+  width: 20vw;
+  height: 20vw;
+  border: 1px solid black;
+  z-index: 2;
+}
+#root #container > div:nth-child(1) {
+  width: 60vw;
+  height: 20vw;
+  position: absolute;
+  z-index: 1;
+  left: 23vw;
+  top: 32vh;
+  display: flex;
+  justify-content: space-around;
+}
+#root #container > div:nth-child(1) > div {
+  width: 18vw;
+  height: 18vw;
+  background-color: #c4c4c4;
+  z-index: 1;
+}/*# sourceMappingURL=layout.css.map */
