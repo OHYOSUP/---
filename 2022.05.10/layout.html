@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .on{
+      background-color: #777;
+      /* left: 34vw; */
+      /* transition: 0.5s; */
+    }
+
+
+  </style>
+</head>
+<body>
+    <ul id="menu">
+      menu
+      <div id="list">
+        <li>menu-item-1</li>
+        <li>menu-item-2</li>
+        <li>menu-item-3</li>
+        <li>menu-item-4</li>
+        <li>menu-item-5</li>
+      </div>
+    </ul>
+  
+    
+
+
+
+
+  <script>
+    const menu = document.getElementById('menu');
+    const list = document.getElementById('list');
+    console.log(menu);
+    console.log(list);
+
+    // list.style.backgroundColor = "#777";
+    list.style.color = "#fff";
+    // menu.style.backgroundColor = "#fff";
+    // list.style.width = "30vw";
+    // list.style.height = "100vh";
+    // list.style.backgroundColor = "#777";
+    // list.style.left = 0 +"vw";
+
+    let posX = 0;
+    let posY = 0;
+    let isStatus = true;
+
+    
+
+    menu.addEventListener('click', function(a){
+      console.log(a.target);
+
+      if(event.target.classList.contains('on')){
+
+        event.target.classList.remove('on');
+      }else{
+        event.target.classList.add('on')
+      }
+    });
+
+
+
+  </script>
+</body>
+</html>

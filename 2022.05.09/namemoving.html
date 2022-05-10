@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div>
+      <h1>Find your Actor</h1>
+    </div>
+    <div id="box"></div>
+  </div>
+
+
+  <script>
+    const root = document.getElementById('root');
+    const text = root.firstChild;
+    const list = document.getElementById('box');
+
+    root.style.width = "100vw";
+    root.style.height = "100vh";
+    root.style.backgroundColor = "#2D2D2D"
+    root.style.color = "#fff";
+
+    list.style.width = "20vw";
+    list.style.height = "5vh";
+    list.style.border = "1px solid white";
+    list.style.display = "flex";
+    list.style.justifyContent = "center";
+    list.style.alignItems = "center";
+    list.style.color = "#fff";
+
+    console.log(text);
+    console.log(list);
+
+    let actor = ["전여빈", "변요한", "엄태구", "이민지", "이주영", "구교환"];
+    let actorValue = -1;
+    let isStatus = true;
+
+
+    let timer = setInterval(function(){
+
+      if(isStatus === true){
+        actorValue++;
+        list.textContent = actor[actorValue];
+        console.log(actor[actorValue]);
+        if(actorValue >= actor.length-1){
+          actorValue = -1;
+        }
+        } 
+    },1000)
+
+
+  </script>
+</body>
+</html>

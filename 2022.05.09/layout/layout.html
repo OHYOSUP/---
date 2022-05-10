@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="layout.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div id="container">
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  const root = document.getElementById('root');
+  console.log(root);
+  const container = document.getElementById('container');
+  console.log(container);
+
+  let a = 0;
+  let isStaus = true;
+
+
+  root.addEventListener('click', function(){
+
+    let timer = setInterval(function(){
+      
+      if(isStaus === true){
+        a++;
+        
+        if(a >= 10){
+          
+          clearInterval(timer);
+          isStaus = false;
+        }
+      } else{
+        if(isStaus === false){
+          a--;
+         if(a >= 0){
+          isStaus = true;
+        }
+        }
+        }
+        console.log(a);
+    
+    }, 500);
+  });
+
+</script>
+</body>
+</html>
