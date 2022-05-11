@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+
+    #root{
+      width: 100vw;
+      height: 3000px; 
+      background-color: #595959;
+
+    }
+    #root>button{
+      width: 5vw;
+      height: 5vw;
+      border-radius: 50%;
+      border: 0px;
+      background-color: #2D2D2D;
+      color: #BA3737;
+
+      position: fixed;
+      right: 0;
+      bottom: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <button id="button">
+      To the Top
+    </button>
+  </div>
+
+  <script>
+    
+    const button = document.getElementById('button');
+    
+    let doctotalHeightValue = document.body.scrollHeight;
+
+    // let currentscrollValue = window.scrollY;
+    
+    
+
+    button.addEventListener('click', (event) =>{
+      window.scrollTo({
+        top: 0,
+        behavior:"smooth"
+      })
+      });
+    
+      // button.addEventListener('mouseover', (event) =>{
+      //   button.style.width = "8vw";
+      //   button.style.height = "8vw";
+      //   button.style.transition = "0.5s";
+      // });
+
+      let isStatus = true;
+
+      if(isStatus === true){
+        button.addEventListener('mouseover', (event) =>{
+          
+        button.style.width = "8vw";
+        button.style.height = "8vw";
+        button.style.transition = "0.5s";
+        if(button.click){
+          
+        }
+      });
+      isStatus = false;
+      } else if (isStatus === false){
+        button.addEventListener('mouseout', (event) =>{
+          
+        button.style.width = "5vw";
+        button.style.height = "5vw";
+        button.style.transition = "0.5s";
+        });
+        isStatus = true;
+        }
+    
+      
+
+
+  </script>
+</body>
+</html>

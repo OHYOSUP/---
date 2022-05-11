@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #root{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #root>div:nth-child(1){
+      width: 20vw;
+      height: 30vh;
+      font-size: 3rem;
+
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+
+    #text1 {
+      position: absolute;
+      top: -2vh;
+      color: #A89391;
+      mix-blend-mode: overlay;
+    }
+    #text2 {
+      position: absolute;
+      top: -5vh;
+      color: #E1F5A2;
+      mix-blend-mode: overlay;
+    }
+    #text3 {
+      position: absolute;
+      top: 6vh;
+      color: #F59589;
+      mix-blend-mode: overlay;
+    }
+    #text4 {
+      position: absolute;
+      top: 10vh;
+      color: #71A6F5;
+      mix-blend-mode: overlay;
+    }
+    #text5 {
+      position: absolute;
+      top: 3vh;
+      color: #5677A8;
+      mix-blend-mode: overlay;
+    }
+    #text6 {
+      position: absolute;
+      top: 16vh;
+      color: #85845b;
+      mix-blend-mode: overlay;
+    }
+
+    #root>div:nth-child(2){
+      width: 40vw;
+      height: 40vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      color: #c4c4c4;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="box1">
+        <h1 id="text1">function</h1>
+        <h1 id="text2">variable</h1>
+        <h1 id="text3">constant</h1>
+        <h1 id="text4">object</h1>
+        <h1 id="text5">array</h1>
+        <h1 id="text6">index</h1>
+    </div>
+    <div id="box2">
+      <p>The greatest glory in living lives not in never falling, but in rising every time we fall.</p>
+    </div>
+  </div>
+
+
+  <script>
+    const root = document.getElementById('root');
+    console.log(root);
+    const box1 = document.getElementById('box1');
+    const text = box1.children[0,1,2,3,4,5];
+    console.log(text);
+
+    text.addEventListener('mouseover', function(){
+      console.log('hello');
+      text.style.fontSize = "7rem";
+      text.style.transition = "0.5s";
+    })
+
+
+
+  </script>
+</body>
+</html>

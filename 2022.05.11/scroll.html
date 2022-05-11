@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+
+    #root{
+      width: 100vw;
+      height: 3000px; 
+      /* background: linear-gradient(0deg, #ccc, #333); */
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+  </div>
+
+  <script>
+    
+    
+    let doctotalHeightValue = document.body.scrollHeight;
+    // let currentscrollValue = window.scrollY;
+
+    window.addEventListener('scroll', (event) =>{
+    if(window.scrollY > 0 ){
+      console.log('당신은 방금 스크롤을 내렸다');
+      
+      console.log(window.scrollY);
+    }
+
+    if(window.scrollY >= 2048){
+      
+      console.log('yahoo');
+    }
+
+
+    });
+
+
+  </script>
+</body>
+</html>

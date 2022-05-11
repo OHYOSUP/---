@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  #root{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ccc;
+
+  }
+
+  section{
+    width: 50vw;
+    height: 10vh;
+    background-color: salmon;
+  }
+
+
+</style>
+
+</head>
+<body>
+  <div id="root">
+    <button>popup</button>
+  </div>
+
+  <script>
+
+    const root = document.getElementById('root');
+    const btn = document.querySelector('button');
+    // console.log(root);
+    // console.log(btn);
+
+    let actors = ["변요한", "전여빈", "구교환", "이민지", "엄태구", "이주영"];
+    // console.log(actors);
+    let i = 0;
+    let section = document.createElement('section');
+    let close = document.createElement('button');
+
+
+    btn.addEventListener('click', ()=>{
+      
+      section.textContent = actors[i];
+      section.appendChild(close);
+      close.textContent = "close";
+      // 이것들을 다 포함해서
+      root.appendChild(section);
+      // section창을 만들어라
+
+      
+    });
+      
+
+      section.addEventListener('click', ()=>{
+        section.textContent= actors[i];
+        section.appendChild(close);
+        i++;
+      if(i >= 6){
+        i=0;
+      }
+    });
+    
+    close.addEventListener('click', ()=>{
+        console.log(close.parentElement);
+        close.parentElement.remove();
+      });
+
+
+
+
+  </script>
+</body>
+</html>
