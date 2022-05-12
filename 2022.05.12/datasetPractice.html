@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="menu">
+    <li class="items" data-targeting = "1">menu1</li>
+    <li class="items" data-targeting = "2">menu2</li>
+    <li class="items" data-targeting = "3">menu3</li>
+    <li class="items" data-targeting = "4">menu4</li>
+  </ul>
+
+  <div data-targeting="4"></div>
+<script>
+  const menu = document.getElementById('menu');
+  const items = document.getElementsByClassName('items');
+  console.log(menu);
+  console.log(items);
+  // 잘 식별 되었는지 확인
+  // * 메서드마다 데이터타입 리턴이 다르다
+
+
+  // for(let i = 0; i < items.length; i++){
+  //   items[i].style.color = "red";
+  // }
+// * 검증확인을 끝낸다.
+
+menu.addEventListener('click', (event)=>{
+  let getDataset = event.target.dataset.targeting;
+  console.log(getDataset);
+
+  for(let i = 0; i < items.length; i++){
+    if(items[i].dataset.targeting===getDataset){
+      items[i].style.color = "blue";
+    }else{
+      items[i].style.color = "red";
+
+    }
+  }
+});
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id = "menu">
+    <li class="list" data-ace = "1">item-1</li>
+    <li class="list" data-ace = "2">item-2</li>
+    <li class="list" data-ace = "3">item-3</li>
+    <li class="list" data-ace = "4">item-4</li>
+    <li class="list" data-ace = "5">item-5</li>
+    <li class="list" data-ace = "6">item-6</li>
+  </ul>
+
+
+  <script>  
+  const menu = document.getElementById('menu');
+  const actors = document.getElementsByClassName("list");
+
+  console.log(menu);
+  console.dir(actors);
+
+  let isStatus = true;
+    
+  menu.style.display = "flex";
+  menu.style.listStyle = "none";
+  // actors.style.marginLeft = "10px";
+
+
+
+  menu.addEventListener('mouseover', (event)=>{
+      let getDataset = event.target.dataset.ace;
+      console.log(getDataset);
+
+      for(let i = 0; i < actors.length; i++){
+        // actors[i].style.color = "red";
+        if(actors[i].dataset.ace === getDataset){
+          actors[i].style.fontSize = "3rem";
+          actors[i].style.transition = "0.2s";
+        }else {
+          actors[i].style.color = "green";
+        }
+      }
+    });  
+  
+    menu.addEventListener('mouseout', ()=>{
+      let getDataset = event.target.dataset.ace;
+      console.log(getDataset);
+
+      for(let i = 0; i < actors.length; i++){
+        // actors[i].style.color = "red";
+        if(actors[i].dataset.ace === getDataset){
+          actors[i].style.fontSize = "1rem";
+          actors[i].style.transition = "0.2s";
+
+          
+        }else {
+          actors[i].style.color = "green";
+        }
+      }
+    });
+
+
+
+  </script>
+</body>
+</html>
