@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    #menu{
+      width: 20vw;
+      height: 100vh;
+      background-color: #c4c4c4;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu>div:nth-child(1){
+      width: 5vw;
+      height: 5vw;
+      border-radius: 50%;
+      background-color: #333;
+      
+      position: absolute;
+      left: 7vw;
+    }
+
+    
+
+  </style>
+</head>
+<body>
+  <nav id="menu">
+    <div></div>
+    <ul id= list>
+      <li id="item" data-actors = "1">item-1</li>
+      <li id="item" data-actors = "2">item-2</li>
+      <li id="item" data-actors = "3">item-3</li>
+      <li id="item" data-actors = "4">item-4</li>
+      <li id="item" data-actors = "5">item-5</li>
+      <li id="item" data-actors = "6">item-6</li>
+    </ul>
+  </nav>
+
+
+
+
+<script>
+const menu = document.getElementById('menu');
+const btn = document.querySelector('div');
+const list = document.getElementById('list');
+const items = document.getElementById('item');
+console.log(btn);
+
+
+list.style.display = "none";
+list.style.listStyleType = "none";
+
+items.style.width = "10vw"
+items.style.height = "10vh"
+items.style.backgroundColor = "#fff"
+items.style.display = "flex";
+items.style.justifyContent = "center";
+items.style.alignItems = "center";
+
+
+
+
+
+
+let isStatus = true;
+let i = 20;
+
+
+
+
+
+
+console.log(menu);
+btn.addEventListener('click', ()=>{
+  let menuWidht = setInterval(function(){
+    
+    if(isStatus === true){
+      i++;
+      menu.style.width = i + "vw";
+      
+      
+      if(i >= 70){
+        isStatus = false;
+        clearInterval(menuWidht);
+        list.style.display = "block";
+
+      }
+    }
+    
+    if(isStatus === false){
+      i--;
+      menu.style.width = i + "vw";
+      }
+      if( i <= 20){
+        isStatus = true;
+        clearInterval(menuWidht);
+        list.style.display = "none";
+
+      }
+  },8);
+});
+
+
+</script>
+</body>
+</html>

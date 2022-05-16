@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    #menu{
+      width: 20vw;
+      height: 100vh;
+      background-color: #c4c4c4;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu>div:nth-child(1){
+      width: 5vw;
+      height: 5vw;
+      border-radius: 50%;
+      background-color: #333;
+      
+      position: absolute;
+      left: 7vw;
+    }
+
+  </style>
+</head>
+<body>
+  <nav id="menu">
+    <div>
+      <div id="line1"></div>
+      <div id="line2"></div>
+    </div>
+    <ul id= list>
+      <li id="item">item-1</li>
+      <li id="item">item-2</li>
+      <li id="item">item-3</li>
+      <li id="item">item-4</li>
+      <li id="item">item-5</li>
+      <li id="item">item-6</li>
+    </ul>
+  </nav>
+
+<script>
+const menu = document.getElementById('menu');
+const btn = document.querySelector('div');
+const list = document.getElementById('list');
+const items = document.querySelectorAll('#item');
+const line1 = document.getElementById('line1');
+const line2 = document.getElementById('line2');
+// console.log(btn);
+// console.log(items);
+
+
+list.style.display = "none";
+list.style.listStyleType = "none";
+
+
+for(index = 0; index < items.length; index++){
+  items[index].style.width = "15vw"
+  items[index].style.height = "10vh"
+  items[index].style.backgroundColor = "#fff"
+  items[index].style.marginTop = "5vh"
+  items[index].style.display = "flex";
+  items[index].style.justifyContent = "center";
+  items[index].style.alignItems = "center";
+}
+
+let isStatus = true;
+let i = 20;
+
+
+
+
+console.log(menu);
+btn.addEventListener('click', ()=>{
+  let menuWidht = setInterval(function(){
+    
+    if(isStatus === true){
+      i++;
+      menu.style.width = i + "vw";
+
+      btn.style.backgroundColor = "#c4c4c4";
+      btn.style.display = "flex";
+      btn.style.flexDirection = "column";
+      btn.style.justifyContent = "center";
+      btn.style.alignItems= "center";
+
+      line1.style.display = "block";
+      line1.style.backgroundColor = "#222";
+      line1.style.transform = "rotate(45deg)";
+      line1.style.width = "5vw";
+      line1.style.height = "0.2vh";
+
+      line2.style.display = "block";
+      line2.style.backgroundColor = "#222";
+      line2.style.transform = "rotate(-45deg)";
+      line2.style.width = "5vw";
+      line2.style.height = "0.2vh";
+      
+      if(i >= 70){
+        isStatus = false;
+        list.style.display = "block";
+
+        
+        clearInterval(menuWidht);
+
+      }
+    }
+    
+    if(isStatus === false){
+      i--;
+      menu.style.width = i + "vw";
+      // list.style.display = "block";
+
+      if(i <=68){
+      list.style.display = "none";
+      }
+
+      }
+      if( i <= 20){
+        isStatus = true;
+        list.style.display = "none";
+
+        btn.style.backgroundColor = "#333";
+        line1.style.display = "none";
+        line2.style.display = "none";
+
+        clearInterval(menuWidht);
+      }
+  },8);
+});
+
+
+
+
+</script>
+</body>
+</html>
