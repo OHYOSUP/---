@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+#root>div:nth-child(1){
+  width: 100vw;
+  height: 80vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#root>div:nth-child(1)>div{
+  width: 10vw;
+  height: 10vw;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root button{
+  width: 15vw;
+  height: 5vh;
+}
+
+.move{
+  transform: translateY(200px);
+}
+.move2{
+  transform: translateY(-200px);
+}
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+    <button>Click</button>
+  </div>
+
+  <script>
+    const root = document.getElementById('root');
+    const container = document.getElementById('container');
+    const circle = container.children;
+    const btn = document.querySelector("button");
+
+    console.log(circle[1]);
+
+
+    i = 0;
+
+    btn.addEventListener('click', ()=>{
+      if(i%2 ===0 && i < circle.length){
+        circle[i].classList.add('move2');
+        i++;
+      }else if(i%2 === 1 && i < circle.length){
+        circle[i].classList.add('move');
+        i++;
+      }
+    });
+    
+    
+
+  </script>
+</body>
+</html>

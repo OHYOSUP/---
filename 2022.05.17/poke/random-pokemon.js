@@ -18,7 +18,7 @@ const getPokemon = pokemon.getName(randomPokemon(1, pokemon.all().length), "ko")
 // console.log(`현재 포켓몬스터는 ${pokemon.all().length}개 있습니다.`);
 // console.log(getPokemon);
 
-console.log(pokemon.all("ja"));
+
 
 
 
