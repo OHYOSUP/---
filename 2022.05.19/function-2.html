@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+
+    <span id = "test">this is span</span>
+  </div>
+
+  <script>
+const test = document.getElementById('test');
+const root = document.getElementById('root');
+// console.dir(test);
+test.style.display = "block";
+
+
+function tagNameMaker(elem){
+if(elem.tagname !== "" && elem.tagname !== null){
+  return elem.tagName.length;
+}
+};
+
+console.log(tagNameMaker(test));
+
+// const makeSpan = document.createElement(tagNameMaker);
+const makeSpan = document.createElement("span");
+makeSpan.style.width = "100px";
+makeSpan.style.heigth = "100px";
+
+
+test.addEventListener('click',function(){
+  for(let i = 0; i < tagNameMaker(test); i++){
+    root.appendChild(makeSpan);
+    makeSpan.style.backgroundColor = "red";
+    console.log(root);
+
+  }
+})
+
+
+  </script>
+</body>
+</html>

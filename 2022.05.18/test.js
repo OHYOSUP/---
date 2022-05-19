@@ -67,7 +67,7 @@ const setDateDay = now.getDay();
 //   console.log('Wow!');
 // },3000);
 
-
+const second = 
 
 
 console.log(now);

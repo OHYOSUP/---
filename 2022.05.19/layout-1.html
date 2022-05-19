@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div id="container">
+      <div>left</div>
+      <div id = "numbers">
+        <div id = "one">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+      <div>right</div>
+    </div>
+  </div>
+
+  <script>
+const root = document.getElementById('root');
+const container = document.getElementById('container');
+const arrow = document.querySelectorAll("#container>div");
+const numbers = document.getElementById('numbers');
+const elem = document.querySelectorAll('#numbers>div');
+const one = document.getElementById('one');
+
+// console.log(arrow);
+const navi = Array.from(arrow);
+
+// console.log(navi);
+// console.log(numbers);
+// console.log(elem);
+// console.log(typeof elem);
+
+const scroller = Array.from(elem);
+// console.log(Array.isArray(scroller));
+
+// console.log(scroller);
+// console.log(scroller[0]);
+
+
+
+root.style.width = "100vw";
+root.style.height = "100vh";
+root.style.display = "flex";
+root.style.justifyContent = "center";
+root.style.alignItems = "center";
+
+container.style.width = "50vw";
+container.style.heigth = "10vh";
+container.style.display = "flex";
+container.style.justifyContent = "space-around";
+container.style.alignItems = "center";
+
+numbers.style.width = "40vw";
+numbers.style.heigth = "10vh";
+numbers.style.display = "flex";
+numbers.style.justifyContent = "space-around";
+numbers.style.alignItems = "center";
+
+
+
+// 클릭하면 앞에놈이 없어지고 뒤로 삽입된다는거지
+// 앞에놈이 없어지는건 shift() -> 배열 첫번째 놈을 제거하고 제거된 요소를 반환
+// 이놈을 push시키면 앞에놈이 뒤로가게 되겠지
+// 일단 이거부터해보자고
+
+
+
+
+navi[0].addEventListener('click', ()=>{
+  let arr = [];
+  const next = scroller.shift();
+  console.log(next);
+  console.log(scroller);
+  
+  const gotoBack = scroller.push(next);
+  console.log(gotoBack);
+  console.log(scroller);
+  
+  return arr;
+  // next.style.color = "red";
+  
+  // next.style.fontSize = "2rem";
+});
+Array.from(navi);
+one.style.color = "red";
+
+// numbers[0].style.fontSize = "2rem"
+// navi[1].style.fontSize= "2rem"
+// one.style.backgroundColor = "red"
+// 콘솔상에는 잘 작동이 되는 것 같은데
+// 왜 스타일이 안바뀌고 콘솔만 찍히는겨?
+// 이벤트로 콘솔만 찍어서 그렇겠지
+// 그럼 스타일을 어떻게 적용시켜야 하는거지
+
+
+
+
+  </script>
+</body>
+</html>

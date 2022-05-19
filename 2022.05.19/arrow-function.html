@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="root"></button>
+  
+  
+  
+  <script>
+    const btn = document.getElementById('root');
+
+    btn.addEventListener('click', function(){
+      console.log(this);
+    });
+
+// 이렇게 쓰면 콘솔에서 button을 가리키지만
+
+
+    btn.addEventListener('click', ()=>{
+      console.log(this);
+      function testTwo(a){
+      console.log(a);
+    }
+    });
+    
+    // this 는 arrow function을 만나면 상위스코프를 가리킨다
+    // this는 함수 선언방식으로 바뀐다.
+function testOne(a){
+  const testTwo = () => {
+    console.log(this);
+  }
+  testTwo();
+};
+
+
+testOne(1);
+
+
+
+
+  </script>
+</body>
+</html>

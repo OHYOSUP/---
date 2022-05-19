@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="root">click</button>
+  <h1 id="h1">test</h1>
+  <h2 id="h2">이것은 h2입니다</h2>
+  <span id = "text1">인생</span>
+  <p id = "text2">은 아름다워</p>
+  
+
+  <script>
+    const root = window.document.querySelector('#root');
+    const h1 = document.getElementById('h1');
+    const h2 = document.getElementById('h2');
+    const text1 = document.getElementById('text1');
+    const text2 = document.getElementById('text2');
+    const box = document.getElementById('box');
+    
+    console.dir(text1);
+    // text1.style.display = "block";
+
+    function thisEvent(element, color){
+
+      element.addEventListener('wheel',(event)=>{
+        console.log(event.deltaY);
+        if(event.deltaY === 100){
+          event.target.style.backgroundColor = color;
+        } else{
+          event.target.style.backgroundColor = "#000";
+        }
+
+      });
+    }
+
+    console.log(thisEvent);
+
+
+    thisEvent(root,"red");
+    thisEvent(h1,"blue");
+    thisEvent(h2, "green");
+    thisEvent(text1,"red");
+    thisEvent(text2, "lightblue");
+  </script>
+</body>
+</html>
