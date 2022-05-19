@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body>
+<div id="root">
+  <div>거리</div>
+  <div>가격</div>
+  <div>맛</div>
+  <div>그 외</div>
+</div>  
+
+  <script>
+
+    const restaurant = ["삼식이식당", "도군 함박스테이크", "우리손 칼국수", "춤추는 왕만두", "버거킹", "곱창가 백반", "은화수 식당", "엉터리해장국 감자탕", "현정떡볶이", "동글이김밥", "태평소국밥", "떡반집", "미스터라멘", "멘야산다이매", "둔산가", "본만쥬", "한일 수육칼국수"];
+    const checkBox = document.querySelectorAll('#root');
+    console.log(restaurant);
+    
+
+    const box = Array.from(checkBox);
+    console.log(Array.isArray(box));
+
+    root.style.width  = "100vw";
+    root.style.height  = "100vh";
+    root.style.display = "flex";
+    root.style.justifyContent = "center";
+    root.style.alignItems = "center"
+
+    
+
+
+    let distance = [];
+
+    // 거리, 가격, 맛, 그 외
+    // 네가지로 분류해서 if문으로 해당하는 요소만 콘솔찍으면
+    // 문제는 겹치는 요소들은 자동으로 빠져야함
+
+    // if()? dataset?
+
+    // 배열을 네개만들어서
+    // 데이타세트값을 부여해서
+    // 조건문 달아서
+    // 겹치는건 지워지도록
+    // 겹치는건 어떻게지워?
+
+
+  </script>
+</body>
+</html>

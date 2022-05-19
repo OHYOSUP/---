@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<input type="checkbox" name="restaurant" value="삼식이식당" onclick='result(event)'>거리
+<input type="checkbox" name="restaurant" value="우리손칼국수" onclick='result(event)'>가격
+<input type="checkbox" name="restaurant" value="춤추는왕만두" onclick='result(event)'>맛
+<input type="checkbox" name="restaurant" value="버거킹" onclick='result(event)'>그외
+
+<div id="box"></div>
+
+
+
+<script>
+
+
+function result (event){
+const query = 'input[name = "restaurant"]:checked';
+const selectedElems = document.querySelectorAll(query);
+
+const arrSelectedElems = Array.from(selectedElems);
+// console.log(Array.isArray(arrSelectedElems))
+
+let box = "";
+arrSelectedElems.forEach((el)=>{
+result + el.value + '';
+});
+document.getElementById('box').textContent = box;
+};
+
+// const box = document.getElementById('box');
+// console.dir(box);
+
+// function result (event){
+
+// let box = "";
+// if(event.target.checked){
+//   box = event.target.value;
+// }else{
+// box = "";
+// }
+// document.getElementById('box').innerText = box;
+// };
+
+
+</script>
+</body>
+</html>

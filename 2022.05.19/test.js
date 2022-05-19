@@ -15,3 +15,5 @@ let obj = {
 // console.log(obj.a === obj.b || obj.a === obj.c);
 // console.log(obj.a === obj.b && obj.a === obj.c);
 console.log(obj.sum(obj.a, "2"));
+
+
