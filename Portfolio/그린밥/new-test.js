@@ -34,12 +34,40 @@ const lunchMenu = {
   }
 };
 
-console.log(lunchMenu.distance);
+
+let distance = lunchMenu.distance;
+let arrOne = [distance];
+// console.log(arrOne);
+
+arrOne.forEach(element => {
+  console.log(element);
+});
+
+console.log(Array.isArray(arrOne));
+let price = lunchMenu.price;
+let arrTwo = [price];
+// console.log(taste);
+arrTwo.forEach(element => {
+  console.log(element);
+});
+console.log(Array.isArray(arrTwo));
+
+let taste = lunchMenu.taste;
+let arrThree = [taste];
+// console.log(taste);
+arrThree.forEach(element => {
+  console.log(element);
+});
+console.log(Array.isArray(arrThree));
+
+let others = lunchMenu.taste;
+let arrFour = [taste];
+// console.log(taste);
+arrFour.forEach(element => {
+  console.log(element);
+});
+console.log(Array.isArray(arrFour));
 
 
 
-
-// const menuName = [lunchMenu.menuOne.name,lunchMenu.menuTwo.name ];
-// const taste = [lunchMenu.menuOne.name, lunchMenu.menuTwo.name]
-// lunchMenu.na
 

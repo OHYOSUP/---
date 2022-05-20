@@ -7,8 +7,12 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <input type="checkbox" name="option" value="lunchMenu.distance" onclick="checkboxValue()">
+  <input type="checkbox" name="option" value="lunchMenu.price" onclick="checkboxValue()">
+  <input type="checkbox" name="option" value="lunchMenu.taste" onclick="checkboxValue()">
+  <input type="checkbox" name="option" value="lunchMenu.others" onclick="checkboxValue()">
 
+  <div id="result"></div>
 <script>
 const lunchMenu = {
   distance: {
@@ -46,8 +50,61 @@ const lunchMenu = {
   }
 };
 
-console.log(lunchMenu.distance);
+
+let distance = lunchMenu.distance;
+let arrOne = [distance];
+// console.log(arrOne);
+
+arrOne.forEach(element => {
+  console.log(element);
+});
+
+console.log(Array.isArray(arrOne));
+let price = lunchMenu.price;
+let arrTwo = [price];
+// console.log(taste);
+arrTwo.forEach(element => {
+  console.log(element);
+});
+console.log(Array.isArray(arrTwo));
+
+let taste = lunchMenu.taste;
+let arrThree = [taste];
+// console.log(taste);
+arrThree.forEach(element => {
+  console.log(element);
+});
+console.log(Array.isArray(arrThree));
+
+let others = lunchMenu.taste;
+let arrFour = [taste];
+// console.log(taste);
+arrFour.forEach(element => {
+  console.log(element);
+});
+console.log(Array.isArray(arrFour));
+
+// -----------------------------------------------------------------
+
+const arrOption = document.getElementsByName('option');
+const result = document.getElementById('result');
+console.log(result);
+console.log(arrOption);
+
+console.log(arrOption[0]);
+
+
+
+function checkboxValue (){
+  for(let i =0; i < arrOption.length; i++){
+  if(arrOption[i].checked === true){
+  result.textContent = arrOption[i];
+  }
+  }
+}
+
+
 
 </script>
 </body>
-</html>
+</html> 
