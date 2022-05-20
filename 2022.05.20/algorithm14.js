@@ -28,9 +28,9 @@ const arr = [ "a", "b", "c"];
 
 
 let temp = arr.shift();
-// console.log(temp);
+console.log(temp);
 // console.log(arr);
 
-arr.splice(1,0,temp);
+arr.splice(arr.length-1,0,temp);
 console.log(arr);
 
