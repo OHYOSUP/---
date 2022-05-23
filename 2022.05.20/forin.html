@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
   <div id="root"></div>
   <script>
     const root = document.getElementById('root');
-    
+
     const arr = [];
 
 
-    for(let properties in root){
+    for (let properties in root) {
       const p = document.createElement('p');
       p.textContent = properties;
       root.appendChild(p);
@@ -23,18 +25,18 @@
       arr.push(properties);
 
 
-    // let i = 0;
+      // let i = 0;
 
-    // if(i < properties.length){
-    //   i++;
-    //   if(i % 2 === 0){
-    //     properties.length[i].style.color = "red";
-    //   }
-    // } else{
-    //   properties.length[i].style.color = "blue";
+      // if(i < properties.length){
+      //   i++;
+      //   if(i % 2 === 0){
+      //     properties.length[i].style.color = "red";
+      //   }
+      // } else{
+      //   properties.length[i].style.color = "blue";
 
-    // }
-      
+      // }
+
     }
     // console.log(arr);
     // console.log(arr[2]);
@@ -44,22 +46,22 @@
     console.log(Array.isArray(elems));
 
     console.log(elems.length);
-    
-    for(let i = 0; i < elems.length; i++){
-      if(i % 2 === 0){
+
+    for (let i = 0; i < elems.length; i++) {
+      if (i % 2 === 0) {
         elems[i].style.color = "red";
         elems[i].style.display = "flex";
         elems[i].style.justifyContent = "center";
-      } else{
+      } else {
         elems[i].style.color = "blue";
       }
     }
 
 
 
-  
 
-    
+
+
 
     // for(let i = 0; i < arr.length; i++){
     //   if(i % 2 === 0){
@@ -69,13 +71,7 @@
 
     //   }
     // }
-
-
-    
-
-
-
-
   </script>
 </body>
+
 </html>
