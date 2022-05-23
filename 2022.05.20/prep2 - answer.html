@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div id="container">
+      <div id="nav">
+        <div id="leftBtn">←</div>
+        <div id="numberBox">
+          <p id = "text"></p>
+        </div>
+        <div id="rightBtn">→</div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script>
+    const root = document.getElementById('root');
+    const text = document.getElementById('text');
+    const container = document.getElementById('container');
+    const nav = document.getElementById('nav');
+    const numberBox = document.getElementById('numberBox');
+
+    const leftBtn = document.getElementById('leftBtn');
+    const rightBtn = document.getElementById('rightBtn');
+
+    let number = [1,2,3,4,5];
+    
+    text.innerHTML = number;
+
+    root.style.width = "100vw";
+    root.style.heigth = "100vh";
+    root.style.display = "flex";
+    root.style.justifyContent = "center";
+    root.style.alignContent = "center";
+
+    container.style.width = "50vw";
+    container.style.display = "flex";
+    container.style.justifyContent = "space-btween";
+    container.style.alignItems = "center";
+
+    nav.style.width = "50vw";
+    nav.style.height = "10vh";
+    nav.style.display = "flex";
+    nav.style.justifyContent = "space-btween";
+    nav.style.alignItems = "center";
+
+
+    numberBox.style.width = "50vw";
+    numberBox.style.height = "10vh";
+    numberBox.style.display = "flex";
+    numberBox.style.justifyContent = "space-around";
+    numberBox.style.alignItems = "center";
+
+
+    
+    leftBtn.addEventListener('click', ()=>{
+      const gotoBack = number.shift();
+      number.push(gotoBack);
+
+      text.innerText = number;
+    });
+    
+
+    rightBtn.addEventListener('click', ()=>{
+      const gotoFront = number.pop();
+      number.unshift(gotoFront);
+
+      text.innerText = number;
+    });
+    
+    
+
+
+
+  </script>
+</body>
+</html>
