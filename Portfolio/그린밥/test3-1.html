@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+
+    <input type="checkbox" name="option" id = "one" value="lunchMenu.distance" onclick="checkboxValue()">
+    <input type="checkbox" name="option" id = "two" value="lunchMenu.price" onclick="checkboxValue()">
+    <input type="checkbox" name="option" id = "three" value="lunchMenu.taste" onclick="checkboxValue()">
+    <input type="checkbox" name="option" id = "four" value="lunchMenu.others" onclick="checkboxValue()">
+
+  </div>
+
+<script>
+const lunchMenu = {
+  distance: {
+    one : "삼식이식당",
+    two : "우리손 칼국수",
+    three : "춤추는 왕만두",
+    four : "도군 함박스테이크",
+    five : "곱창가 백반",
+    six : "버거킹",
+    seven : "한일 수육 칼국수"
+  },
+  price: {
+    one: "삼식이식당",
+    two: "우리손 칼국수",
+    three : "춤추는 왕만두",
+    four : "버거킹",
+    five : "떡반집",
+    six : "한일 수육칼국수"
+  },
+  taste: {
+    one: "삼식이식당",
+    two: "우리손 칼국수",
+    three : "춤추는 왕만두",
+    four : "은화수 식당",
+    five : "엉터리해장국 감자탕",
+    six : "현정 떡볶이",
+    seven : "태평 소국밥",
+    eight : "멘야산다이매",
+    nine : "둔산가"
+  },  
+  others: {
+    one: "동글이 김밥",
+    two: "미스터 라멘",
+    three : "본만쥬",
+  }
+};
+
+const root = document.getElementById('root');
+const checkbox = document.getElementsByName('option');
+
+// console.log(checkbox.checked);
+
+// let distance = lunchMenu.distance;
+// let arrOne = [distance];
+
+// let test = [];
+
+// arrOne.forEach(element => {
+//   console.log(element);
+// });
+
+// console.log(Array.isArray(arrOne));
+
+// let price = lunchMenu.price;
+// let arrTwo = [price];
+
+
+
+
+function checkboxValue() {
+  // console.log('test');
+  for(let key in lunchMenu.distance) {
+    console.log(lunchMenu.distance[key]);
+    const p = document.createElement('p');
+    p.textContent = lunchMenu.distance[key];
+    root.appendChild(p);
+    // test.push['p'];
+  }
+}
+
+</script>
+</body>
+</html>
