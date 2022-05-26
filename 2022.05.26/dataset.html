@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="root" data-index="1" class="test on active"></div>
+  <section class="test"></section>
+  <section class="test"></section>
+  <section class="test"></section>
+  <section class="test"></section>
+  <section class="test"></section>
+
+  <article class="test"></article>
+  <article class="test"></article>
+  <article class="test" data-index="1"></article>
+  <article class="test"></article>
+  <article class="test"></article>
+
+  <nav class="test"></nav>
+  <nav class="test"></nav>
+  <nav class="test"></nav>
+  <nav class="test"></nav>
+  <nav class="test"></nav>
+  <nav class="test"></nav>
+  <nav class="test" data-index="1"></nav>
+  <nav class="test"></nav>
+  <nav class="test"></nav>
+  <nav class="test"></nav>
+<!-- HTML 사용자정의 속성 -->
+  <script>
+    const root = document.getElementById('root');
+    const testOne = document.querySelectorAll('.test');
+    const testTwo = document.getElementsByClassName('test');
+
+    console.log(testOne);
+    // console.log(testTwo);
+
+    for(let i = 0; i < testOne.length; i++){
+      if(testOne[i].dataset.index === "1"){
+        console.log(i);
+        if(testOne[i].classList.contains('test')){
+          testOne[i].style.backgroundColor = "blue";
+          testOne[i].style.width = "100px"
+          testOne[i].style.height = "100px"
+
+        }
+      }
+    }
+
+// dataset : 객체로 수집할 수 있다
+// 포함여부나 이것저것 구분을 시킬 수 있다
+// 값이 모두 문자열임
+// 문자열을 숫자로 바꾸는 방법 : Number(), parseInt()
+
+    // console.dir(root);
+    // console.log(root.dataset);
+    // console.log(root.classList);
+    // console.log(root.dataset["aa"]);
+    //  = console.log(root.dataset.aa);
+
+    console.log(typeof root.dataset.index);
+    // classList<-> "dataset"
+    // dataset = 내가 특별하게 따로 관리하고 싶은 특정 요소들을 표시할 수 있다.
+
+
+
+
+
+  </script>
+</body>
+</html>
