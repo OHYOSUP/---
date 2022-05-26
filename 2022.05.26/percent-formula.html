@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+    #root{
+      width: 100vw;
+      height: 100vh;
+      background-color: #333;
+      color: #ccc;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <h1>111</h1>
+    <h1>222</h1>
+  </div>
+
+  <script>
+    const root = document.getElementById('root');
+    // console.dir(root);
+
+    let totalHeight = root.offsetHeight;
+    //? 브라우저 높이값의 50%에 해당하는 px은 얼마입니까?
+
+    // console.log(totalHeight*(50/100));
+
+    function dotheMath(x, y){
+      let result = (x*y)/100
+      return result;
+      
+    }
+
+    console.log(dotheMath(totalHeight,34));
+// 전체값에서 몇 퍼센트의 값은 얼마인지 구하기
+
+
+
+
+    // let bgColorValue = 155;
+    // let bgColor = `rgb(${bgColorValue},${bgColorValue},${bgColorValue})`;
+// 전체값에서 퍼센트값을 구하는 공식
+
+    // let setResult = Math.round((255 * 35) / 100);
+    // console.log(setResult);
+
+    // 1. 브라우저의 윗방향이 0%, 아래가 100% ->퍼센트로 만들 수 있는가
+    // 2. 색깔값은 흰색이 255, 검은색이 0 ->퍼센트로 값을 넣을 수 있는가
+
+
+    // root.style.backgroundColor = bgColor;
+    // console.log(root);
+    root.addEventListener('mousemove', (event)=>{
+      // console.log(event.offsetX);
+      console.log(event.offsetY);
+      root.children[0].textContent = event.offsetX;
+      root.children[1].textContent = event.offsetY;
+    });
+
+
+  </script>
+</body>
+</html>
