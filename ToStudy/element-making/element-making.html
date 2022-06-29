@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+  <script>
+    // const a = document.getElementById('root');
+    // console.dir(a);
+// 생성자 함수에서 뽑아져나온 '객체'
+// 꺽쇠를 써서 html에 약속된 문자열을 작성하면 객체를 만들어줘
+// DOM API
+
+// console.log(document.body);
+// document.createElement('div');
+// 요스를 만든다
+// root.id = 'root';
+// console.log(root);
+const root = document.createElement('div');
+document.body.appendChild(root);
+const ul = document.createElement('ul');
+root.appendChild(ul);
+
+
+const array = [];
+
+
+setTimeout(() => {
+  for(let i = 0; i < 1000; i++){
+    const li = document.createElement('li');
+    const img = document.createElement('img');
+    img.setAttribute('src', 'images/images-[i].jpg');
+    li.appendChild(img);
+    ul.appendChild(li);
+  }
+}, 1000);
+
+ul.innerHTML = '나는 사케마시는 이아진이다';
+
+
+  </script>
+</body>
+</html>
