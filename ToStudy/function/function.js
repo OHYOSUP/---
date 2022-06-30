@@ -1,11 +1,14 @@
-function one(a,b){
-
-let one = a
-let two = b
-
-return  one + two
-// return은 출구
+function one(a,b, count){
+  let strings = `${a} ${b}`
+for(let i = 0; i < count; i++){
+  console.log(strings)  
 }
 
-console.log(one('아버지가', '방에들어가신다.'));
+
+// return  `${a} ${b}`
+// return은 출구
+return '아부지 밖에 계시지롱';
+}
+
+one('<div>', '</div>', 5);
 
