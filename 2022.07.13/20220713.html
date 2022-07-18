@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #root{
+      width: 100vw;
+      /* height: 100vh; */
+      position: relative;
+      overflow: hidden;
+    }
+
+    #first{
+      width:50vw;
+      height: 100vh;
+      position: relative;
+      z-index: 5;
+      right: 0;
+      
+      /* background-color: #222; */
+    }
+
+    #first>img{
+      z-index: 5;
+    }
+    #second{
+      /* width:100vw; */
+      position: absolute;
+      z-index: 1;
+      right: 22vw;
+      top: 20vh;
+      color: #fff;
+      font-size: 10rem;
+      /* font-weight: 1000; */
+      background-color: #ccc;
+      /* transform: rotate(-90deg); */
+      /* letter-spacing: 12px; */
+    }
+
+    #third{
+      width:100vw;
+      height: 100vh;
+      z-index: 0;
+      top: 0;
+      position: absolute;
+      background-image: url(/Whiplash-2.jpg);
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="first"><img src="/image-1.png" alt=""></div>
+
+    <div id="second">
+      <p>
+        WHIPLASH
+      </p>
+    </div>
+
+    <div id="third">
+      <div></div>
+    </div>
+  </div>
+</body>
+<script>
+
+  const second = document.getElementById('second')
+  const first = document.getElementById('first');
+
+  console.log(second);
+  console.log(first);
+
+
+  first.addEventListener('click', function(){
+    second.style.zIndex = 100;
+  });
+
+  first.addEventListener('mouseover', function(){
+    
+  });
+
+
+
+</script>
+</html>
